@@ -7,10 +7,10 @@ This project aims to provide a concise overview of the UART (Universal Asynchron
 
 
 ## Contents
-1. [**Concept of UART Protocol:**](#-Concept-of-UART-Protocol)
-2. **ASIC Flow (RTL to GDS Flow):**
+1. **Concept of UART Protocol:**
+2. **ASIC Flow (main focus on Physical Design Flow):**
 
----
+----
 
 # Concept of UART Protocol
 
@@ -41,11 +41,12 @@ For UART to work the following settings need to be the same on both the transmit
 - Start bits size (generally logic 0)
 
 
-
+----
 
 #  ASIC Design Flow: Implementation of this Project from RTL to GDS II
 
 Welcome to our comprehensive guide on ASIC design, where we have designed the project from RTL to GDS II. This guide is perfect for those who want to see theory put into practice and gain hands-on experience.
+
 ## Content Overview
 - **RTL Design**
 - **RTL Simulation**
