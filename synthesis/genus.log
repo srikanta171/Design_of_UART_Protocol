@@ -1,0 +1,175 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 17.22-s017_1, built Sun Apr 01 2018
+Options: -legacy_ui -files scirpt_synthesis.tcl 
+Date:    Tue Dec 26 15:49:25 2023
+Host:    cadence1 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*1physical cpu*Intel(R) Xeon(R) W-1250P CPU @ 4.10GHz 12288KB) (65516248KB)
+OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+Checking out license: Genus_Synthesis (5 seconds elapsed).
+
+Loading tool scripts...
+
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source scirpt_synthesis.tcl
+  Setting attribute of root '/': 'init_lib_search_path' = /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/
+  Setting attribute of root '/': 'init_hdl_search_path' = /home/vlsi1/23EC4224/project/UART_protocol/rtl/
+
+Threads Configured:3
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab4' (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff//tsl18fs120_scl_ff.lib, Line 88865)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab2' (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff//tsl18fs120_scl_ff.lib, Line 128091)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab1' (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff//tsl18fs120_scl_ff.lib, Line 211382)
+
+  Message Summary for Library tsl18fs120_scl_ff.lib:
+  **************************************************
+  Could not find an attribute in the library. [LBR-436]: 2
+  Missing clock pin in the sequential cell. [LBR-525]: 3
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  **************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.980000, -40.000000) in library 'tsl18fs120_scl_ff.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Cell 'slbhb2' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+        : This library has a valid test_cell function, but its regular cell function is either missing or not completely understood (e.g. if the cell has a state_table construct).
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slchq4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Cell 'slbhb1' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'adiode' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'adiode' must have an output pin.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slclq2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Cell 'slbhb4' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slclq1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'cload1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'cload1' must have an output pin.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slchq1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slchq2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slclq4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+  Setting attribute of root '/': 'library' = tsl18fs120_scl_ff.lib
+integer count = 0;
+                 |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial value assignment to reg in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 48, column 18.
+        : The following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - checker block
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+integer counts = 0;
+                  |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial value assignment to reg in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 49, column 19.
+reg uclk = 0;
+            |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial value assignment to reg in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 51, column 13.
+enum bit[1:0] {idle = 2'b00, start = 2'b01, transfer = 2'b10, done = 2'b11} state;
+              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Bad declaration using undeclared type 'enum' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 53, column 15.
+        : Invalid Verilog syntax is parsed, or unsupported Verilog syntax is encountered.
+        state <= idle;
+        |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 75, column 9.
+        : A net cannot be assigned within an always block.  This situation may occur because an output port is not explicitly declared as a reg.
+             state <= transfer;
+             |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 88, column 14.
+             state <= idle;       
+             |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 93, column 14.
+           state <= transfer;
+           |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 102, column 12.
+           state <= idle;
+           |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 108, column 12.
+      default : state <= idle;
+                |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 116, column 17.
+integer count = 0;
+                 |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial value assignment to reg in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 145, column 18.
+integer counts = 0;
+                  |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial value assignment to reg in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 146, column 19.
+reg uclk = 0;
+            |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial value assignment to reg in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 148, column 13.
+enum bit[1:0] {idle = 2'b00, start = 2'b01} state;
+              |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : Bad declaration using undeclared type 'enum' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 151, column 15.
+       state <= start;
+       |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 185, column 8.
+       state <= idle;
+       |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 187, column 8.
+     state <= idle;
+     |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 201, column 6.
+   default : state <= idle;
+             |
+Error   : Net not allowed in this context. [VLOGPT-86] [read_hdl]
+        : Net 'state' in file '/home/vlsi1/23EC4224/project/UART_protocol/rtl/uart.sv' on line 206, column 14.
+1
+Encountered problems processing file: scirpt_synthesis.tcl
+WARNING: This version of the tool is 2095 days old.
+legacy_genus:/> exit
+Normal exit.

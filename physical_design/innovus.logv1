@@ -1,0 +1,507 @@
+[12/26 18:35:37      0s] 
+[12/26 18:35:37      0s] Cadence Innovus(TM) Implementation System.
+[12/26 18:35:37      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/26 18:35:37      0s] 
+[12/26 18:35:37      0s] Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+[12/26 18:35:37      0s] Options:	
+[12/26 18:35:37      0s] Date:		Tue Dec 26 18:35:37 2023
+[12/26 18:35:37      0s] Host:		cadence1 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*Intel(R) Xeon(R) W-1250P CPU @ 4.10GHz 12288KB)
+[12/26 18:35:37      0s] OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+[12/26 18:35:37      0s] 
+[12/26 18:35:37      0s] License:
+[12/26 18:35:38      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[12/26 18:35:38      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/26 18:35:44      6s] @(#)CDS: Innovus v17.12-s095_1 (64bit) 11/09/2017 12:10 (Linux 2.6.18-194.el5)
+[12/26 18:35:44      6s] @(#)CDS: NanoRoute 17.12-s095_1 NR171102-1913/17_12-UB (database version 2.30, 405.7.1) {superthreading v1.44}
+[12/26 18:35:44      6s] @(#)CDS: AAE 17.12-s040 (64bit) 11/09/2017 (Linux 2.6.18-194.el5)
+[12/26 18:35:44      6s] @(#)CDS: CTE 17.12-s036_1 () Nov  2 2017 09:33:40 ( )
+[12/26 18:35:44      6s] @(#)CDS: SYNTECH 17.12-s012_1 () Oct 31 2017 04:30:11 ( )
+[12/26 18:35:44      6s] @(#)CDS: CPE v17.12-s076
+[12/26 18:35:44      6s] @(#)CDS: IQRC/TQRC 16.1.1-s220 (64bit) Fri Aug  4 09:53:48 PDT 2017 (Linux 2.6.18-194.el5)
+[12/26 18:35:44      6s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[12/26 18:35:44      6s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[12/26 18:35:44      6s] @(#)CDS: RCDB 11.10
+[12/26 18:35:44      6s] --- Running on cadence1 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*Intel(R) Xeon(R) W-1250P CPU @ 4.10GHz 12288KB) ---
+[12/26 18:35:44      6s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_24738_cadence1_vlsi1_wN2oZU.
+
+[12/26 18:35:44      6s] Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+[12/26 18:35:44      6s] 
+[12/26 18:35:44      6s] **INFO:  MMMC transition support version v31-84 
+[12/26 18:35:44      6s] 
+[12/26 18:35:44      6s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/26 18:35:44      6s] <CMD> suppressMessage ENCEXT-2799
+[12/26 18:35:44      6s] <CMD> getVersion
+[12/26 18:35:44      6s] <CMD> getVersion
+[12/26 18:35:44      6s] [INFO] Loading PVS 16.12-s208 fill procedures
+[12/26 18:35:45      6s] <CMD> getDrawView
+[12/26 18:35:45      6s] <CMD> loadWorkspace -name Physical
+[12/26 18:35:45      6s] <CMD> win
+[12/26 18:35:52      7s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[12/26 18:35:52      7s] <CMD> set conf_qxconf_file NULL
+[12/26 18:35:52      7s] <CMD> set conf_qxlib_file NULL
+[12/26 18:35:52      7s] <CMD> set defHierChar /
+[12/26 18:35:52      7s] <CMD> set distributed_client_message_echo 1
+[12/26 18:35:52      7s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[12/26 18:35:52      7s] <CMD> set eco_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[12/26 18:35:52      7s] <CMD> set enc_enable_print_mode_command_reset_options 1
+[12/26 18:35:52      7s] <CMD> set init_gnd_net {VSS VSSO}
+[12/26 18:35:52      7s] <CMD> set init_io_file UART_iopad.io
+[12/26 18:35:52      7s] <CMD> set init_lef_file {../../../../Downloads/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ../../../../Downloads/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ../../../../Downloads/scl_pdk/iolib/cio150/cds/lef/tsl18cio150_4lm.lef}
+[12/26 18:35:52      7s] <CMD> set init_mmmc_file viewDefinition.tcl
+[12/26 18:35:52      7s] <CMD> set init_pwr_net {VDD VDDO}
+[12/26 18:35:52      7s] <CMD> set init_verilog ../synthesis/UART_netlist.v
+[12/26 18:35:52      7s] <CMD> set latch_time_borrow_mode max_borrow
+[12/26 18:35:52      7s] <CMD> set pegDefaultResScaleFactor 1
+[12/26 18:35:52      7s] <CMD> set pegDetailResScaleFactor 1
+[12/26 18:35:52      7s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[12/26 18:35:52      7s] <CMD> set soft_stack_size_limit 127
+[12/26 18:35:52      7s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[12/26 18:35:58      8s] <CMD> init_design
+[12/26 18:35:58      8s] #% Begin Load MMMC data ... (date=12/26 18:35:58, mem=474.1M)
+[12/26 18:35:58      8s] #% End Load MMMC data ... (date=12/26 18:35:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=474.1M, current mem=470.7M)
+[12/26 18:35:58      8s] 
+[12/26 18:35:58      8s] Loading LEF file ../../../../Downloads/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ...
+[12/26 18:35:58      8s] 
+[12/26 18:35:58      8s] Loading LEF file ../../../../Downloads/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ...
+[12/26 18:35:58      8s] Set DBUPerIGU to M2 pitch 560.
+[12/26 18:35:58      8s] 
+[12/26 18:35:58      8s] Loading LEF file ../../../../Downloads/scl_pdk/iolib/cio150/cds/lef/tsl18cio150_4lm.lef ...
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'apc3d01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03ed' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b21eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b25eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3d00' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/26 18:35:58      8s] Type 'man IMPLF-200' for more detail.
+[12/26 18:35:58      8s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[12/26 18:35:58      8s] To increase the message display limit, refer to the product command reference manual.
+[12/26 18:35:58      8s] 
+[12/26 18:35:58      8s] viaInitial starts at Tue Dec 26 18:35:58 2023
+viaInitial ends at Tue Dec 26 18:35:58 2023
+Loading view definition file from viewDefinition.tcl
+[12/26 18:35:58      8s] Reading my_max_library_set timing library '/home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib' ...
+[12/26 18:35:58      8s] Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/26 18:35:59      8s] Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/26 18:35:59      8s] Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/26 18:35:59      8s] Read 534 cells in library 'tsl18fs120_scl_ss' 
+[12/26 18:35:59      8s] Reading my_max_library_set timing library '/home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib' ...
+[12/26 18:35:59      8s] **ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1171)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1185)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1408)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1422)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1644)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1658)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1880)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1894)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2117)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2131)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2354)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2368)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2590)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2604)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2827)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2841)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3071)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3085)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3308)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3322)
+Message <TECHLIB-1318> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/26 18:35:59      8s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[12/26 18:35:59      8s] Read 93 cells in library 'tsl18cio250_max' 
+[12/26 18:35:59      8s] Reading my_min_library_set timing library '/home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib' ...
+[12/26 18:35:59      8s] Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/26 18:35:59      8s] Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/26 18:35:59      9s] Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/26 18:35:59      9s] Read 534 cells in library 'tsl18fs120_scl_ff' 
+[12/26 18:35:59      9s] Reading my_min_library_set timing library '/home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_min.lib' ...
+[12/26 18:35:59      9s] Read 93 cells in library 'tsl18cio250_min' 
+[12/26 18:35:59      9s] *** End library_loading (cpu=0.01min, real=0.02min, mem=27.3M, fe_cpu=0.15min, fe_real=0.37min, fe_mem=561.5M) ***
+[12/26 18:35:59      9s] #% Begin Load netlist data ... (date=12/26 18:35:59, mem=552.9M)
+[12/26 18:35:59      9s] *** Begin netlist parsing (mem=561.5M) ***
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'or04d2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'or04d2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'an02d1' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'an02d1' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'nd02da' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'nd02da' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'dl03d2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'dl03d2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'invtd7' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'invtd7' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'slnht2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'slnht2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'nr03d7' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'nr03d7' is defined in LEF but not in the timing library.
+[12/26 18:35:59      9s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[12/26 18:35:59      9s] To increase the message display limit, refer to the product command reference manual.
+[12/26 18:35:59      9s] Pin 'VDD' of cell 'pvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'VDDC' of cell 'pvdc' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'VDDO' of cell 'pvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'VSS' of cell 'pv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'VSS' of cell 'pv0f' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'VSSC' of cell 'pv0c' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'VSSO' of cell 'pv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'AVDD' of cell 'apvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'AVDDO' of cell 'apvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'AVSS' of cell 'apv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Pin 'AVSSO' of cell 'apv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/26 18:35:59      9s] Created 627 new cells from 4 timing libraries.
+[12/26 18:35:59      9s] Reading netlist ...
+[12/26 18:35:59      9s] Backslashed names will retain backslash and a trailing blank character.
+[12/26 18:35:59      9s] Reading verilog netlist '../synthesis/UART_netlist.v'
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] *** Memory Usage v#1 (Current mem = 561.496M, initial mem = 179.895M) ***
+[12/26 18:35:59      9s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=561.5M) ***
+[12/26 18:35:59      9s] #% End Load netlist data ... (date=12/26 18:35:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=552.9M, current mem=504.3M)
+[12/26 18:35:59      9s] Top level cell is uart_top.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t02u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t02d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t01u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t01d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3t01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3o03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3o02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pt3o01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pc3t05u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pc3t05d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pc3t05' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pc3t04u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pc3t04d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pc3t04' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pc3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPTS-282):	Cell 'pc3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/26 18:35:59      9s] Type 'man IMPTS-282' for more detail.
+[12/26 18:35:59      9s] **WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+[12/26 18:35:59      9s] To increase the message display limit, refer to the product command reference manual.
+[12/26 18:35:59      9s] Hooked 1254 DB cells to tlib cells.
+[12/26 18:35:59      9s] Starting recursive module instantiation check.
+[12/26 18:35:59      9s] No recursion found.
+[12/26 18:35:59      9s] Building hierarchical netlist for Cell uart_top ...
+[12/26 18:35:59      9s] *** Netlist is unique.
+[12/26 18:35:59      9s] ** info: there are 1287 modules.
+[12/26 18:35:59      9s] ** info: there are 489 stdCell insts.
+[12/26 18:35:59      9s] ** info: there are 23 Pad insts.
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] *** Memory Usage v#1 (Current mem = 589.168M, initial mem = 179.895M) ***
+[12/26 18:35:59      9s] Reading IO assignment file "UART_iopad.io" ...
+[12/26 18:35:59      9s] Adjusting Core to Left to: 0.3200. Core to Bottom to: 0.3200.
+[12/26 18:35:59      9s] **WARN: (IMPFP-3961):	The techSite 'CO_MSTR_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/26 18:35:59      9s] Type 'man IMPFP-3961' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPFP-3961):	The techSite 'IOSite_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/26 18:35:59      9s] Type 'man IMPFP-3961' for more detail.
+[12/26 18:35:59      9s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 18:35:59      9s] Vertical Layer M2 offset = 280 (derived)
+[12/26 18:35:59      9s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 18:35:59      9s] Set Default Net Delay as 1000 ps.
+[12/26 18:35:59      9s] Set Default Net Load as 0.5 pF. 
+[12/26 18:35:59      9s] Set Default Input Pin Transition as 0.1 ps.
+[12/26 18:35:59      9s] Extraction setup Delayed 
+[12/26 18:35:59      9s] *Info: initialize multi-corner CTS.
+[12/26 18:35:59      9s] Reading timing constraints file '/home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc' ...
+[12/26 18:35:59      9s] Current (total cpu=0:00:09.4, real=0:00:22.0, peak res=645.5M, current mem=645.5M)
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 29).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 30).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 31).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 32).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 33).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 34).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 35).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 36).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 37).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 38).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] **WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 39).
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] INFO (CTE): Reading of timing constraints file /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc completed, with 11 WARNING
+[12/26 18:35:59      9s] WARNING (CTE-25): Line: 9, 10 of File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc : Skipped unsupported command: set_units
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=662.5M, current mem=662.5M)
+[12/26 18:35:59      9s] Current (total cpu=0:00:09.4, real=0:00:22.0, peak res=662.5M, current mem=662.5M)
+[12/26 18:35:59      9s] Creating Cell Server ...(0, 1, 1, 1)
+[12/26 18:35:59      9s] Summary for sequential cells identification: 
+[12/26 18:35:59      9s]   Identified SBFF number: 114
+[12/26 18:35:59      9s]   Identified MBFF number: 0
+[12/26 18:35:59      9s]   Identified SB Latch number: 0
+[12/26 18:35:59      9s]   Identified MB Latch number: 0
+[12/26 18:35:59      9s]   Not identified SBFF number: 6
+[12/26 18:35:59      9s]   Not identified MBFF number: 0
+[12/26 18:35:59      9s]   Not identified SB Latch number: 0
+[12/26 18:35:59      9s]   Not identified MB Latch number: 0
+[12/26 18:35:59      9s]   Number of sequential cells which are not FFs: 83
+[12/26 18:35:59      9s] Total number of combinational cells: 321
+[12/26 18:35:59      9s] Total number of sequential cells: 203
+[12/26 18:35:59      9s] Total number of tristate cells: 10
+[12/26 18:35:59      9s] Total number of level shifter cells: 0
+[12/26 18:35:59      9s] Total number of power gating cells: 0
+[12/26 18:35:59      9s] Total number of isolation cells: 0
+[12/26 18:35:59      9s] Total number of power switch cells: 0
+[12/26 18:35:59      9s] Total number of pulse generator cells: 0
+[12/26 18:35:59      9s] Total number of always on buffers: 0
+[12/26 18:35:59      9s] Total number of retention cells: 0
+[12/26 18:35:59      9s] List of usable buffers: bufbd7 buffd2 bufbdf buffda buffd3 bufbda buffd4 bufbd4 bufbd1 bufbd3 buffd7 buffd1 bufbd2
+[12/26 18:35:59      9s] Total number of usable buffers: 13
+[12/26 18:35:59      9s] List of unusable buffers:
+[12/26 18:35:59      9s] Total number of unusable buffers: 0
+[12/26 18:35:59      9s] List of usable inverters: inv0d2 inv0da invbda invbdk inv0d1 inv0d7 invbd4 inv0d0 invbd2 inv0d4 invbd7 invbdf
+[12/26 18:35:59      9s] Total number of usable inverters: 12
+[12/26 18:35:59      9s] List of unusable inverters:
+[12/26 18:35:59      9s] Total number of unusable inverters: 0
+[12/26 18:35:59      9s] List of identified usable delay cells: dl04d1 dl03d1 dl02d2 dl03d4 dl04d2 dl02d1 dl01d4 bufbdk dl04d4 dl02d4 dl01d2 dl01d1 dl03d2
+[12/26 18:35:59      9s] Total number of identified usable delay cells: 13
+[12/26 18:35:59      9s] List of identified unusable delay cells:
+[12/26 18:35:59      9s] Total number of identified unusable delay cells: 0
+[12/26 18:35:59      9s] Creating Cell Server, finished. 
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] Deleting Cell Server ...
+[12/26 18:35:59      9s] Patterns Extraction called explicitly through PreRoutePatternsIfNeeded call 
+[12/26 18:35:59      9s] Extraction setup Started 
+[12/26 18:35:59      9s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[12/26 18:35:59      9s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[12/26 18:35:59      9s] Type 'man IMPEXT-2773' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/26 18:35:59      9s] Type 'man IMPEXT-2776' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/26 18:35:59      9s] Type 'man IMPEXT-2776' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 2.5 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/26 18:35:59      9s] Type 'man IMPEXT-2776' for more detail.
+[12/26 18:35:59      9s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/26 18:35:59      9s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/26 18:35:59      9s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/26 18:35:59      9s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.04 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/26 18:35:59      9s] Summary of Active RC-Corners : 
+[12/26 18:35:59      9s]  
+[12/26 18:35:59      9s]  Analysis View: my_analysis_view_setup
+[12/26 18:35:59      9s]     RC-Corner Name        : my_rc_corner_worst
+[12/26 18:35:59      9s]     RC-Corner Index       : 0
+[12/26 18:35:59      9s]     RC-Corner Temperature : 25 Celsius
+[12/26 18:35:59      9s]     RC-Corner Cap Table   : ''
+[12/26 18:35:59      9s]     RC-Corner PreRoute Res Factor         : 1
+[12/26 18:35:59      9s]     RC-Corner PreRoute Cap Factor         : 1
+[12/26 18:35:59      9s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/26 18:35:59      9s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/26 18:35:59      9s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/26 18:35:59      9s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[12/26 18:35:59      9s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[12/26 18:35:59      9s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/26 18:35:59      9s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/26 18:35:59      9s]  
+[12/26 18:35:59      9s]  Analysis View: my_analysis_view_hold
+[12/26 18:35:59      9s]     RC-Corner Name        : my_rc_corner_worst
+[12/26 18:35:59      9s]     RC-Corner Index       : 0
+[12/26 18:35:59      9s]     RC-Corner Temperature : 25 Celsius
+[12/26 18:35:59      9s]     RC-Corner Cap Table   : ''
+[12/26 18:35:59      9s]     RC-Corner PreRoute Res Factor         : 1
+[12/26 18:35:59      9s]     RC-Corner PreRoute Cap Factor         : 1
+[12/26 18:35:59      9s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/26 18:35:59      9s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/26 18:35:59      9s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/26 18:35:59      9s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[12/26 18:35:59      9s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[12/26 18:35:59      9s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/26 18:35:59      9s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/26 18:35:59      9s] 
+[12/26 18:35:59      9s] *** Summary of all messages that are not suppressed in this session:
+[12/26 18:35:59      9s] Severity  ID               Count  Summary                                  
+[12/26 18:35:59      9s] WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/26 18:35:59      9s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/26 18:35:59      9s] WARNING   IMPTS-282           92  Cell '%s' is not a level shifter cell bu...
+[12/26 18:35:59      9s] WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+[12/26 18:35:59      9s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[12/26 18:35:59      9s] WARNING   IMPEXT-2776          3  The via resistance between layers %s and...
+[12/26 18:35:59      9s] WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+[12/26 18:35:59      9s] WARNING   TCLCMD-1178         11  set_output_delay command specified witho...
+[12/26 18:35:59      9s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[12/26 18:35:59      9s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[12/26 18:35:59      9s] *** Message Summary: 1617 warning(s), 20 error(s)
+[12/26 18:35:59      9s] 
+[12/26 18:36:32     13s] <CMD> getIoFlowFlag
+[12/26 18:37:16     18s] <CMD> setIoFlowFlag 0
+[12/26 18:37:16     18s] <CMD> floorPlan -site CoreSite -d 1105.0 1105.0 20 20 20 20
+[12/26 18:37:16     18s] **WARN: (IMPFP-4026):	Adjusting core to 'Left' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/26 18:37:16     18s] **WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/26 18:37:16     18s] **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/26 18:37:16     18s] **WARN: (IMPFP-4026):	Adjusting core to 'Top' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/26 18:37:16     18s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 18:37:16     18s] Vertical Layer M2 offset = 280 (derived)
+[12/26 18:37:16     18s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 18:37:16     18s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/26 18:37:16     18s] <CMD> uiSetTool select
+[12/26 18:37:16     18s] <CMD> getIoFlowFlag
+[12/26 18:37:16     18s] <CMD> fit
+[12/26 18:37:18     18s] <CMD> setIoFlowFlag 0
+[12/26 18:37:18     18s] <CMD> floorPlan -site CoreSite -d 1104.88 1104.88 20.16 20.16 20.16 20.16
+[12/26 18:37:18     18s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 18:37:18     18s] Vertical Layer M2 offset = 280 (derived)
+[12/26 18:37:18     18s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 18:37:18     18s] <CMD> uiSetTool select
+[12/26 18:37:18     18s] <CMD> getIoFlowFlag
+[12/26 18:37:18     18s] <CMD> fit
+[12/26 18:59:12    154s] <CMD> getIoFlowFlag
+[12/26 18:59:15    154s] <CMD> setIoFlowFlag 0
+[12/26 18:59:15    154s] <CMD> floorPlan -site CoreSite -d 1104.88 1104.88 20.16 20.16 20.16 20.16
+[12/26 18:59:15    154s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 18:59:15    154s] Vertical Layer M2 offset = 280 (derived)
+[12/26 18:59:15    154s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 18:59:15    154s] <CMD> uiSetTool select
+[12/26 18:59:15    154s] <CMD> getIoFlowFlag
+[12/26 18:59:15    154s] <CMD> fit
+[12/26 18:59:17    154s] <CMD> setIoFlowFlag 0
+[12/26 18:59:17    154s] <CMD> floorPlan -site CoreSite -d 1104.88 1104.88 20.16 20.16 20.16 20.16
+[12/26 18:59:17    154s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 18:59:17    154s] Vertical Layer M2 offset = 280 (derived)
+[12/26 18:59:17    154s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 18:59:17    154s] <CMD> uiSetTool select
+[12/26 18:59:17    154s] <CMD> getIoFlowFlag
+[12/26 18:59:17    154s] <CMD> fit
+[12/26 18:59:28    156s] <CMD> uiSetTool ruler
+[12/26 18:59:48    158s] <CMD> fit
+[12/26 19:00:15    162s] <CMD> getIoFlowFlag
+[12/26 19:00:30    164s] <CMD> setIoFlowFlag 0
+[12/26 19:00:30    164s] <CMD> floorPlan -site CoreSite -d 1105.88 1105.88 20.16 20.16 20.16 20.16
+[12/26 19:00:30    164s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 19:00:30    164s] Vertical Layer M2 offset = 280 (derived)
+[12/26 19:00:30    164s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 19:00:30    164s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/26 19:00:30    164s] <CMD> uiSetTool select
+[12/26 19:00:30    164s] <CMD> getIoFlowFlag
+[12/26 19:00:30    164s] <CMD> fit
+[12/26 19:01:47    173s] <CMD> setIoFlowFlag 0
+[12/26 19:01:47    173s] <CMD> floorPlan -site CoreSite -d 1115.0 1115.0 20.16 20.16 20.16 20.16
+[12/26 19:01:47    173s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 19:01:47    173s] Vertical Layer M2 offset = 280 (derived)
+[12/26 19:01:47    173s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 19:01:47    173s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/26 19:01:47    173s] <CMD> uiSetTool select
+[12/26 19:01:47    173s] <CMD> getIoFlowFlag
+[12/26 19:01:47    173s] <CMD> fit
+[12/26 19:01:54    174s] <CMD> setIoFlowFlag 0
+[12/26 19:01:54    174s] <CMD> floorPlan -site CoreSite -d 1114.96 1114.96 20.16 20.16 20.16 20.16
+[12/26 19:01:54    174s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 19:01:54    174s] Vertical Layer M2 offset = 280 (derived)
+[12/26 19:01:54    174s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 19:01:54    174s] <CMD> uiSetTool select
+[12/26 19:01:54    174s] <CMD> getIoFlowFlag
+[12/26 19:01:54    174s] <CMD> fit
+[12/26 19:01:55    174s] <CMD> setIoFlowFlag 0
+[12/26 19:01:55    174s] <CMD> floorPlan -site CoreSite -d 1114.96 1114.96 20.16 20.16 20.16 20.16
+[12/26 19:01:55    174s] Horizontal Layer M1 offset = 0 (derived)
+[12/26 19:01:55    174s] Vertical Layer M2 offset = 280 (derived)
+[12/26 19:01:55    174s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/26 19:01:55    174s] <CMD> uiSetTool select
+[12/26 19:01:55    174s] <CMD> getIoFlowFlag
+[12/26 19:01:55    174s] <CMD> fit
+[12/26 19:02:07    175s] <CMD> uiSetTool ruler
+[12/26 19:02:36    179s] <CMD> fit
+[12/26 19:02:55    181s] <CMD> fit
+[12/26 19:03:29    185s] 
+[12/26 19:03:29    185s] *** Memory Usage v#1 (Current mem = 1042.199M, initial mem = 179.895M) ***
+[12/26 19:03:29    185s] 
+[12/26 19:03:29    185s] *** Summary of all messages that are not suppressed in this session:
+[12/26 19:03:29    185s] Severity  ID               Count  Summary                                  
+[12/26 19:03:29    185s] WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/26 19:03:29    185s] WARNING   IMPFP-325            3  Floorplan of the design is resized. All ...
+[12/26 19:03:29    185s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/26 19:03:29    185s] WARNING   IMPFP-4026           4  Adjusting core to '%s' to %f due to trac...
+[12/26 19:03:29    185s] WARNING   IMPTS-282           92  Cell '%s' is not a level shifter cell bu...
+[12/26 19:03:29    185s] WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+[12/26 19:03:29    185s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[12/26 19:03:29    185s] WARNING   IMPEXT-2776          3  The via resistance between layers %s and...
+[12/26 19:03:29    185s] WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+[12/26 19:03:29    185s] WARNING   TCLCMD-1178         11  set_output_delay command specified witho...
+[12/26 19:03:29    185s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[12/26 19:03:29    185s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[12/26 19:03:29    185s] *** Message Summary: 1624 warning(s), 20 error(s)
+[12/26 19:03:29    185s] 
+[12/26 19:03:29    185s] --- Ending "Innovus" (totcpu=0:03:05, real=0:27:52, mem=1042.2M) ---

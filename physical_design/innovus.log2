@@ -1,0 +1,1322 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+Options:	
+Date:		Tue Dec 26 19:03:50 2023
+Host:		cadence1 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*Intel(R) Xeon(R) W-1250P CPU @ 4.10GHz 12288KB)
+OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 16.12-s208 fill procedures
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> set conf_qxconf_file NULL
+<CMD> set conf_qxlib_file NULL
+<CMD> set defHierChar /
+<CMD> set distributed_client_message_echo 1
+<CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+<CMD> set eco_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+<CMD> set enc_enable_print_mode_command_reset_options 1
+<CMD> set init_gnd_net {VSS VSSO}
+<CMD> set init_io_file UART_iopad.io
+<CMD> set init_lef_file {../../../../Downloads/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ../../../../Downloads/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ../../../../Downloads/scl_pdk/iolib/cio150/cds/lef/tsl18cio150_4lm.lef}
+<CMD> set init_mmmc_file viewDefinition.tcl
+<CMD> set init_pwr_net {VDD VDDO}
+<CMD> set init_verilog ../synthesis/UART_netlist.v
+<CMD> set latch_time_borrow_mode max_borrow
+<CMD> set pegDefaultResScaleFactor 1
+<CMD> set pegDetailResScaleFactor 1
+<CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+<CMD> set soft_stack_size_limit 127
+<CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+<CMD> init_design
+#% Begin Load MMMC data ... (date=12/26 19:04:26, mem=476.0M)
+#% End Load MMMC data ... (date=12/26 19:04:26, total cpu=0:00:00.0, real=0:00:00.0, peak res=476.0M, current mem=472.6M)
+my_rc_corner_worst
+
+Loading LEF file ../../../../Downloads/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ...
+
+Loading LEF file ../../../../Downloads/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ...
+Set DBUPerIGU to M2 pitch 560.
+
+Loading LEF file ../../../../Downloads/scl_pdk/iolib/cio150/cds/lef/tsl18cio150_4lm.lef ...
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'apc3d01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03ed' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b21eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b25eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3d00' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+viaInitial starts at Tue Dec 26 19:04:26 2023
+viaInitial ends at Tue Dec 26 19:04:26 2023
+Loading view definition file from viewDefinition.tcl
+Reading my_max_library_set timing library '/home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib' ...
+Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+Read 534 cells in library 'tsl18fs120_scl_ss' 
+Reading my_max_library_set timing library '/home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib' ...
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1171)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1185)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1408)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1422)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1644)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1658)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1880)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1894)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2117)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2131)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2354)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2368)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2590)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2604)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2827)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2841)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3071)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3085)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3308)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3322)
+Message <TECHLIB-1318> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 93 cells in library 'tsl18cio250_max' 
+Reading my_min_library_set timing library '/home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib' ...
+Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+Read 534 cells in library 'tsl18fs120_scl_ff' 
+Reading my_min_library_set timing library '/home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_min.lib' ...
+Read 93 cells in library 'tsl18cio250_min' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=30.3M, fe_cpu=0.17min, fe_real=0.62min, fe_mem=564.4M) ***
+#% Begin Load netlist data ... (date=12/26 19:04:27, mem=553.9M)
+*** Begin netlist parsing (mem=564.4M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'or04d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'or04d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'an02d1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'an02d1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'nd02da' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'nd02da' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'dl03d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'dl03d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'invtd7' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'invtd7' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'slnht2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'slnht2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'nr03d7' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'nr03d7' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Pin 'VDD' of cell 'pvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VDDC' of cell 'pvdc' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VDDO' of cell 'pvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSS' of cell 'pv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSS' of cell 'pv0f' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSSC' of cell 'pv0c' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSSO' of cell 'pv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVDD' of cell 'apvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVDDO' of cell 'apvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVSS' of cell 'apv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVSSO' of cell 'apv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Created 627 new cells from 4 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../synthesis/UART_netlist.v'
+
+*** Memory Usage v#1 (Current mem = 564.426M, initial mem = 179.895M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=564.4M) ***
+#% End Load netlist data ... (date=12/26 19:04:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=553.9M, current mem=504.2M)
+Top level cell is uart_top.
+**WARN: (IMPTS-282):	Cell 'pt3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t02u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t02d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t01u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t01d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3t01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3o03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3o02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pt3o01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t05u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t05d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t05' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t04u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t04d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t04' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (IMPTS-282):	Cell 'pc3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+Type 'man IMPTS-282' for more detail.
+**WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Hooked 1254 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell uart_top ...
+*** Netlist is unique.
+** info: there are 1287 modules.
+** info: there are 489 stdCell insts.
+** info: there are 23 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 586.184M, initial mem = 179.895M) ***
+Reading IO assignment file "UART_iopad.io" ...
+Adjusting Core to Left to: 0.3200. Core to Bottom to: 0.3200.
+**WARN: (IMPFP-3961):	The techSite 'CO_MSTR_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc' ...
+Current (total cpu=0:00:10.6, real=0:00:37.0, peak res=645.6M, current mem=645.6M)
+uart_top
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 29).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 30).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 31).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 32).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 33).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 34).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 35).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 36).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 37).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 38).
+
+**WARN: (TCLCMD-1178):	set_output_delay command specified without '-clock' option. Command will be ignored for timing analysis. (File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc, Line 39).
+
+INFO (CTE): Reading of timing constraints file /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc completed, with 11 WARNING
+WARNING (CTE-25): Line: 9, 10 of File /home/vlsi1/23EC4224/project/UART_protocol/synthesis/UART_sdc.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=662.6M, current mem=662.6M)
+Current (total cpu=0:00:10.6, real=0:00:37.0, peak res=662.6M, current mem=662.6M)
+Total number of combinational cells: 321
+Total number of sequential cells: 203
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: bufbd7 buffd2 bufbdf buffda buffd3 bufbda buffd4 bufbd4 bufbd1 bufbd3 buffd7 buffd1 bufbd2
+Total number of usable buffers: 13
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: inv0d2 inv0da invbda invbdk inv0d1 inv0d7 invbd4 inv0d0 invbd2 inv0d4 invbd7 invbdf
+Total number of usable inverters: 12
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: dl04d1 dl03d1 dl02d2 dl03d4 dl04d2 dl02d1 dl01d4 bufbdk dl04d4 dl02d4 dl01d2 dl01d1 dl03d2
+Total number of identified usable delay cells: 13
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 2.5 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.04 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: my_analysis_view_setup
+    RC-Corner Name        : my_rc_corner_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: my_analysis_view_hold
+    RC-Corner Name        : my_rc_corner_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPTS-282           92  Cell '%s' is not a level shifter cell bu...
+WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+WARNING   IMPEXT-2776          3  The via resistance between layers %s and...
+WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLCMD-1178         11  set_output_delay command specified witho...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+*** Message Summary: 1617 warning(s), 20 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -d 1115.0 1115.0 20 20 20 20
+**WARN: (IMPFP-4026):	Adjusting core to 'Left' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Right' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Top' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -d 1114.96 1114.96 20.16 20.16 20.16 20.16
+Horizontal Layer M1 offset = 0 (derived)
+Vertical Layer M2 offset = 280 (derived)
+Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> fit
+<CMD> set_wire_load_mode enclosed
+<CMD> addIoFiller -cell pfeed10000 -prefix FILLER -side n
+Added 15 of filler cell 'pfeed10000' on top side.
+<CMD> addIoFiller -cell pfeed10000 -prefix FILLER -side e
+Added 15 of filler cell 'pfeed10000' on right side.
+<CMD> addIoFiller -cell pfeed10000 -prefix FILLER -side w
+Added 15 of filler cell 'pfeed10000' on left side.
+<CMD> addIoFiller -cell pfeed10000 -prefix FILLER -side s
+Added 15 of filler cell 'pfeed10000' on bottom side.
+<CMD> addIoFiller -cell pfeed01000 -prefix FILLER -side s
+Added 9 of filler cell 'pfeed01000' on bottom side.
+<CMD> fit
+<CMD> addIoFiller -cell pfeed01000 -prefix FILLER -side w
+Added 9 of filler cell 'pfeed01000' on left side.
+<CMD> addIoFiller -cell pfeed01000 -prefix FILLER -side e
+Added 9 of filler cell 'pfeed01000' on right side.
+<CMD> addIoFiller -cell pfeed01000 -prefix FILLER -side n
+Added 9 of filler cell 'pfeed01000' on top side.
+<CMD> addIoFiller -cell pfeed00100 -prefix FILLER -side n
+**ERROR: (IMPFP-3352):	Cell pfeed00100 not found.
+
+Usage: addIoFiller [-help] -cell {name list} [-fillAnyGap]
+                   [-fillerOrient <R0|R90|R180|R270|MX|MX90|MY|MY90>]
+                   [-from <coord>] [-prefix <string>]
+                   [-side <top|bottom|left|right>] [-to <coord>]
+                   [-useSmallIoHeight] [-row <num> ] [-logic [ -deriveConnectivity ]]
+
+-help                             # Prints out the command usage
+-cell {name list}                 # name list of IO filler cell
+                                  # (list, required)
+-deriveConnectivity               # derive connectivity for io Filler
+                                  # (bool, optional)
+-fillAnyGap                       # fill smaller gap by overlapping filler cell
+                                  # (bool, optional)
+-fillerOrient <R0|R90|R180|R270|MX|MX90|MY|MY90>
+                                  # orientation of new filler instances (string, optional)
+-from <coord>                     # staring offset from edge for adding fillers
+                                  # (float, optional)
+-logic                            # this option will omit physical only
+                                  # attribute of IO filler instances which
+                                  # newly added. (bool, optional)
+-prefix <string>                  # prefix for new filler instances
+                                  # (string, optional)
+-row <num>                        # row number in multiple io row design
+                                  # (int, optional, min=0, max=1)
+-side <top|bottom|left|right>     # which side of io (string, optional)
+-to <coord>                       # ending offset from edge for adding fillers
+                                  # (float, optional)
+-useSmallIoHeight                 # match site before adding filler
+                                  # (bool, optional)
+
+
+**ERROR: (IMPSYC-194):	Incorrect usage for command 'addIoFiller'.
+
+<CMD> addIoFiller -cell pfeed00100 -prefix FILLER -side n
+**ERROR: (IMPFP-3352):	Cell pfeed00100 not found.
+
+Usage: addIoFiller [-help] -cell {name list} [-fillAnyGap]
+                   [-fillerOrient <R0|R90|R180|R270|MX|MX90|MY|MY90>]
+                   [-from <coord>] [-prefix <string>]
+                   [-side <top|bottom|left|right>] [-to <coord>]
+                   [-useSmallIoHeight] [-row <num> ] [-logic [ -deriveConnectivity ]]
+
+-help                             # Prints out the command usage
+-cell {name list}                 # name list of IO filler cell
+                                  # (list, required)
+-deriveConnectivity               # derive connectivity for io Filler
+                                  # (bool, optional)
+-fillAnyGap                       # fill smaller gap by overlapping filler cell
+                                  # (bool, optional)
+-fillerOrient <R0|R90|R180|R270|MX|MX90|MY|MY90>
+                                  # orientation of new filler instances (string, optional)
+-from <coord>                     # staring offset from edge for adding fillers
+                                  # (float, optional)
+-logic                            # this option will omit physical only
+                                  # attribute of IO filler instances which
+                                  # newly added. (bool, optional)
+-prefix <string>                  # prefix for new filler instances
+                                  # (string, optional)
+-row <num>                        # row number in multiple io row design
+                                  # (int, optional, min=0, max=1)
+-side <top|bottom|left|right>     # which side of io (string, optional)
+-to <coord>                       # ending offset from edge for adding fillers
+                                  # (float, optional)
+-useSmallIoHeight                 # match site before adding filler
+                                  # (bool, optional)
+
+
+**ERROR: (IMPSYC-194):	Incorrect usage for command 'addIoFiller'.
+
+<CMD> fit
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -override -verbose -netlistOverride
+517 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+517 new gnd-pin connections were made to global net 'VSS'.
+<CMD> globalNetConnect VDDO -type pgpin -pin VDDO -override -verbose -netlistOverride
+28 new pwr-pin connections were made to global net 'VDDO'.
+<CMD> globalNetConnect VSSO -type pgpin -pin VSSO -override -verbose -netlistOverride
+28 new gnd-pin connections were made to global net 'VSSO'.
+<CMD> addRing -skip_via_on_wire_shape Noshape -exclude_selected 1 -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer TOP_M -type core_rings -jog_distance 0.56 -threshold 0.56 -nets {VDD VSS} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right TOP_M left TOP_M} -width 6 -spacing 2 -offset 2
+#% Begin addRing (date=12/26 19:16:44, mem=922.3M)
+**WARN: (IMPPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_top_layer layerName"..
+**WARN: (IMPPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_bottom_layer layerName"..
+
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M3   |        4       |       NA       |
+|  TOP_V |        8       |        0       |
+|  TOP_M |        4       |       NA       |
++--------+----------------+----------------+
+#% End addRing (date=12/26 19:16:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=923.8M, current mem=923.8M)
+<CMD> sroute -connect {blockPin corePin padPin padRing floatingStripe secondaryPowerPin} -layerChangeRange {M1 TOP_M} -blockPinTarget nearestTarget -padPinPortConnect {allPort oneGeom} -padPinTarget nearestTarget -corePinTarget firstAfterRowEnd -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowjogging 1 -crossoverViaLayerRange {M1 TOP_M} -nets {VDD VSS} -allowLayerChange 1 -blockPin useLef -targetViaLayerRange {M1 TOP_M}
+#% Begin sroute (date=12/26 19:16:44, mem=923.8M)
+**WARN: (IMPSR-4064):	sroute -connect { secondaryPowerPin } connects level shifter secondary power pins in the special nets. Specify the net name with option -secondaryPinNet. Ignore connecting level shifter secondary power pins for now.
+*** Begin SPECIAL ROUTE on Tue Dec 26 19:16:44 2023 ***
+SPECIAL ROUTE ran on directory: /home/vlsi1/23EC4224/project/UART_protocol/physical_design
+SPECIAL ROUTE ran on machine: cadence1 (Linux 3.10.0-1160.el7.x86_64 Xeon 4.61Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 4
+srouteFloatingStripeTarget set to "blockring ring stripe padring ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 4
+srouteTopTargetLayerLimit set to 4
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1810.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 8 layers, 4 routing layers, 1 overlap layer
+Read in 1084 macros, 44 used
+Read in 163 components
+  35 core components: 35 unplaced, 0 placed, 0 fixed
+  124 pad components: 0 unplaced, 96 placed, 28 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+Read in 23 logical pins
+Read in 23 nets
+Read in 4 special nets, 2 routed
+Read in 182 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-559):	Cannot route core pins and converter pins at the same time!
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+  Number of IO ports routed: 2
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Pad Ring connections: 242
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1810.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 244 wires.
+ViaGen created 2 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M2   |       55       |       NA       |
+|   V3   |        1       |        0       |
+|   M3   |       133      |       NA       |
+|  TOP_V |        1       |        0       |
+|  TOP_M |       56       |       NA       |
++--------+----------------+----------------+
+#% End sroute (date=12/26 19:16:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=923.8M, current mem=923.8M)
+<CMD> fit
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit TOP_M -max_same_layer_jog_length 0.88 -padcore_ring_bottom_layer_limit M3 -set_to_set_distance 40 -skip_via_on_pin Standardcell -stacked_via_top_layer TOP_M -padcore_ring_top_layer_limit TOP_M -spacing 0.46 -xleft_offset 10 -merge_stripes_value 0.56 -layer TOP_M -block_ring_bottom_layer_limit M3 -width 2 -nets {VDD VSS} -stacked_via_bottom_layer M1
+#% Begin addStripe (date=12/26 19:16:46, mem=921.4M)
+**WARN: (IMPPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_top_layer layerName"..
+**WARN: (IMPPP-4022):	Option "-xleft_offset" is obsolete and has been replaced by "-start_offset". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-start_offset"..
+**WARN: (IMPPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_bottom_layer layerName"..
+
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+**WARN: (IMPPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: TOP_M & M2 at (400.16, 846.16) (402.16, 852.16)
+addStripe created 30 wires.
+ViaGen created 59 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  TOP_V |       59       |        0       |
+|  TOP_M |       30       |       NA       |
++--------+----------------+----------------+
+#% End addStripe (date=12/26 19:16:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=922.0M, current mem=922.0M)
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { corePin } -layerChangeRange { M1(1) TOP_M(4) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) TOP_M(4) } -nets { VDD VSS } -allowLayerChange 1 -targetViaLayerRange { M1(1) TOP_M(4) }
+**WARN: (IMPSR-4058):	Sroute option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+*** Begin SPECIAL ROUTE on Tue Dec 26 19:17:10 2023 ***
+SPECIAL ROUTE ran on directory: /home/vlsi1/23EC4224/project/UART_protocol/physical_design
+SPECIAL ROUTE ran on machine: cadence1 (Linux 3.10.0-1160.el7.x86_64 Xeon 4.51Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 4
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 4
+srouteTopTargetLayerLimit set to 4
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1810.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 8 layers, 4 routing layers, 1 overlap layer
+Read in 1084 macros, 44 used
+Read in 163 components
+  35 core components: 35 unplaced, 0 placed, 0 fixed
+  124 pad components: 0 unplaced, 96 placed, 28 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+Read in 23 logical pins
+Read in 23 nets
+Read in 4 special nets, 2 routed
+Read in 182 terminals
+2 nets selected.
+
+Begin power routing ...
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of Core ports routed: 206
+  Number of Followpin connections: 103
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1811.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...
+sroute created 309 wires.
+ViaGen created 618 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |       309      |       NA       |
+|   V2   |       206      |        0       |
+|   V3   |       206      |        0       |
+|  TOP_V |       206      |        0       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { corePin } -layerChangeRange { M1(1) TOP_M(4) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) TOP_M(4) } -nets { VDD VSS } -allowLayerChange 1 -targetViaLayerRange { M1(1) TOP_M(4) }
+**WARN: (IMPSR-4058):	Sroute option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+*** Begin SPECIAL ROUTE on Tue Dec 26 19:17:11 2023 ***
+SPECIAL ROUTE ran on directory: /home/vlsi1/23EC4224/project/UART_protocol/physical_design
+SPECIAL ROUTE ran on machine: cadence1 (Linux 3.10.0-1160.el7.x86_64 Xeon 4.62Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 4
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 4
+srouteTopTargetLayerLimit set to 4
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1811.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 8 layers, 4 routing layers, 1 overlap layer
+Read in 1084 macros, 44 used
+Read in 163 components
+  35 core components: 35 unplaced, 0 placed, 0 fixed
+  124 pad components: 0 unplaced, 96 placed, 28 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+Read in 23 logical pins
+Read in 23 nets
+Read in 4 special nets, 2 routed
+Read in 182 terminals
+2 nets selected.
+
+Begin power routing ...
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of Core ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1812.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+<CMD> setPlaceMode -fp true
+<CMD> report_message -start_cmd
+<CMD> getPlaceMode -user -maxRouteLayer
+<CMD> getPlaceMode -quiet -adaptiveFlowMode
+<CMD> getPlaceMode -timingDriven -quiet
+<CMD> getPlaceMode -adaptive -quiet
+<CMD> getPlaceMode -relaxSoftBlockageMode -quiet
+<CMD> getPlaceMode -user -relaxSoftBlockageMode
+<CMD> getPlaceMode -ignoreScan -quiet
+<CMD> getPlaceMode -user -ignoreScan
+<CMD> getPlaceMode -repairPlace -quiet
+<CMD> getPlaceMode -user -repairPlace
+<CMD> getPlaceMode -inPlaceOptMode -quiet
+<CMD> getPlaceMode -quiet -bypassFlowEffortHighChecking
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -place_global_exp_special_setup_for_nvidia -quiet
+<CMD> um::push_snapshot_stack
+<CMD> getDesignMode -quiet -flowEffort
+<CMD> getDesignMode -highSpeedCore -quiet
+<CMD> getPlaceMode -quiet -adaptive
+<CMD> set spgFlowInInitialPlace 1
+<CMD> getPlaceMode -sdpAlignment -quiet
+<CMD> getPlaceMode -softGuide -quiet
+<CMD> getPlaceMode -useSdpGroup -quiet
+<CMD> getPlaceMode -sdpAlignment -quiet
+<CMD> getPlaceMode -enableDbSaveAreaPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> getPlaceMode -sdpPlace -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -sdpPlace -quiet
+<CMD> getPlaceMode -groupHighLevelClkGate -quiet
+<CMD_INTERNAL> setvar spgRptErrorForScanConnection 0
+<CMD> getPlaceMode -place_global_exp_allow_missing_scan_chain -quiet
+<CMD> getPlaceMode -place_check_library -quiet
+<CMD> getPlaceMode -trimView -quiet
+<CMD> getPlaceMode -expTrimOptBeforeTDGP -quiet
+<CMD> getPlaceMode -quiet -useNonTimingDeleteBufferTree
+<CMD> getPlaceMode -congEffort -quiet
+<CMD> getPlaceMode -relaxSoftBlockageMode -quiet
+<CMD> getPlaceMode -user -relaxSoftBlockageMode
+<CMD> getPlaceMode -ignoreScan -quiet
+<CMD> getPlaceMode -user -ignoreScan
+<CMD> getPlaceMode -repairPlace -quiet
+<CMD> getPlaceMode -user -repairPlace
+<CMD> getPlaceMode -congEffort -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -timingDriven -quiet
+<CMD> getPlaceMode -user -timingDriven
+<CMD> getPlaceMode -fastFp -quiet
+<CMD> getPlaceMode -clusterMode -quiet
+<CMD> get_proto_model -type_match {flex_module flex_instgroup} -committed -name -tcl
+<CMD> getPlaceMode -inPlaceOptMode -quiet
+<CMD> getPlaceMode -quiet -bypassFlowEffortHighChecking
+<CMD> getPlaceMode -ultraCongEffortFlow -quiet
+<CMD> getPlaceMode -forceTiming -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getExtractRCMode -quiet -engine
+<CMD> getAnalysisMode -quiet -clkSrcPath
+<CMD> getAnalysisMode -quiet -clockPropagation
+<CMD> getAnalysisMode -quiet -cppr
+<CMD> setExtractRCMode -engine preRoute
+<CMD> setAnalysisMode -clkSrcPath false -clockPropagation forcedIdeal
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD_INTERNAL> isAnalysisModeSetup
+<CMD> getPlaceMode -tdgpResetCteTG -quiet
+<CMD> getPlaceMode -macroPlaceMode -quiet
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD_INTERNAL> spInternalUse TDGP ignoreTimingSpare
+<CMD> set gpsPrivate::coegIsGbSignedSeedNl 0
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -quiet -expNewFastMode
+<CMD> setPlaceMode -expHiddenFastMode 1
+<CMD> setPlaceMode -reset -ignoreScan
+<CMD> getPlaceMode -quiet -place_global_exp_auto_finish_floorplan
+<CMD> getPlaceMode -quiet -IOSlackAdjust
+*** Starting placeDesign default flow ***
+<CMD> getPlaceMode -quiet -useNonTimingDeleteBufferTree
+<CMD> getPlaceMode -quiet -prePlaceOptSimplifyNetlist
+<CMD> getPlaceMode -quiet -enablePrePlaceOptimizations
+<CMD> getPlaceMode -quiet -prePlaceOptDecloneInv
+<CMD> deleteBufferTree -decloneInv
+*** Start deleteBufferTree ***
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Message <TA-112> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+Deleted 0 physical inst  (cell - / prefix -).
+*** Starting "NanoPlace(TM) placement v#10 (mem=1045.6M)" ...
+<CMD> setDelayCalMode -engine feDc
+No user setting net weight.
+Options: clkGateAware pinGuide congEffort=low gpeffort=fp 
+#std cell=489 (0 fixed + 489 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=128 #net=621 #term=1814 #term/net=2.92, #fixedIo=128, #floatIo=0, #fixedPin=23, #floatPin=0
+stdCell: 489 single + 0 double + 0 multi
+Total standard cell length = 3.0856 (mm), area = 0.0173 (mm^2)
+Estimated cell power/ground rail width = 0.700 um
+Average module density = 0.053.
+Density for the design = 0.053.
+       = stdcell_area 5510 sites (17279 um^2) / alloc_area 104652 sites (328189 um^2).
+Pin Density = 0.01733.
+            = total # of pins 1814 / total area 104652.
+=== lastAutoLevel = 8 
+**WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+Iteration  1: Total net bbox = 1.569e+04 (7.55e+03 8.14e+03)
+              Est.  stn bbox = 1.866e+04 (8.86e+03 9.80e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1038.8M
+Iteration  2: Total net bbox = 1.569e+04 (7.55e+03 8.14e+03)
+              Est.  stn bbox = 1.866e+04 (8.86e+03 9.80e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1038.8M
+Iteration  3: Total net bbox = 1.075e+04 (4.12e+03 6.63e+03)
+              Est.  stn bbox = 1.441e+04 (5.86e+03 8.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+Iteration  4: Total net bbox = 1.036e+04 (4.01e+03 6.35e+03)
+              Est.  stn bbox = 1.391e+04 (5.76e+03 8.15e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+Iteration  5: Total net bbox = 9.624e+03 (3.76e+03 5.87e+03)
+              Est.  stn bbox = 1.286e+04 (5.46e+03 7.40e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+Iteration  6: Total net bbox = 9.004e+03 (3.46e+03 5.55e+03)
+              Est.  stn bbox = 1.195e+04 (5.10e+03 6.85e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+Iteration  7: Total net bbox = 1.137e+04 (5.34e+03 6.02e+03)
+              Est.  stn bbox = 1.433e+04 (7.00e+03 7.32e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+Iteration  8: Total net bbox = 1.137e+04 (5.34e+03 6.02e+03)
+              Est.  stn bbox = 1.433e+04 (7.00e+03 7.32e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+Iteration  9: Total net bbox = 1.344e+04 (6.23e+03 7.21e+03)
+              Est.  stn bbox = 1.666e+04 (8.04e+03 8.62e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+Iteration 10: Total net bbox = 1.344e+04 (6.23e+03 7.21e+03)
+              Est.  stn bbox = 1.666e+04 (8.04e+03 8.62e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+Iteration 11: Total net bbox = 1.344e+04 (6.23e+03 7.21e+03)
+              Est.  stn bbox = 1.666e+04 (8.04e+03 8.62e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1054.8M
+*** cost = 1.344e+04 (6.23e+03 7.21e+03) (cpu for global=0:00:00.1) real=0:00:01.0***
+Solver runtime cpu: 0:00:00.1 real: 0:00:00.1
+Core Placement runtime cpu: 0:00:00.1 real: 0:00:01.0
+*** End of Placement (cpu=0:00:00.1, real=0:00:01.0, mem=1054.8M) ***
+<CMD> setDelayCalMode -engine aae
+<CMD> getPlaceMode -quiet -tdgpAdjustNetWeightBySlack
+<CMD> get_ccopt_clock_trees *
+<CMD> getPlaceMode -exp_insert_guidance_clock_tree -quiet
+<CMD> getPlaceMode -exp_cluster_based_high_fanout_buffering -quiet
+<CMD> getPlaceMode -quiet -cong_repair_commit_clock_net_route_attr
+<CMD> getPlaceMode -enableDbSaveAreaPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> setPlaceMode -reset -improveWithPsp
+<CMD> getPlaceMode -quiet -debugGlobalPlace
+<CMD> getPlaceMode -congRepair -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -nrgrAware -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -enableCongRepairV3 -quiet
+<CMD> getPlaceMode -user -rplaceIncrNPClkGateAwareMode
+<CMD> getPlaceMode -user -congRepairMaxIter
+<CMD> getPlaceMode -quiet -congRepairPDClkGateMode4
+<CMD> setPlaceMode -rplaceIncrNPClkGateAwareMode 4
+<CMD> getPlaceMode -quiet -congEffort
+<CMD> setPlaceMode -congRepairMaxIter 1
+<CMD> getDesignMode -quiet -congEffort
+<CMD> getPlaceMode -quiet -congRepairPDClkGateMode4
+<CMD> setPlaceMode -reset -rplaceIncrNPClkGateAwareMode
+<CMD> setPlaceMode -reset -congRepairMaxIter
+<CMD> getPlaceMode -congRepairCleanupPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> getPlaceMode -tdgpDumpStageTiming -quiet
+*** Finishing placeDesign default flow ***
+<CMD> getPlaceMode -quiet -tdgpAdjustNetWeightBySlack
+<CMD> getPlaceMode -exp_slack_driven -quiet
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 1, mem = 1054.8M **
+<CMD> getPlaceMode -trimView -quiet
+<CMD> getOptMode -quiet -viewOptPolishing
+<CMD> getOptMode -quiet -fastViewOpt
+<CMD_INTERNAL> spInternalUse deleteViewOptManager
+<CMD> setAnalysisMode -clkSrcPath true -clockPropagation sdcControl
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> setExtractRCMode -engine preRoute
+<CMD> setPlaceMode -reset -relaxSoftBlockageMode
+<CMD> setPlaceMode -reset -ignoreScan
+<CMD> setPlaceMode -reset -repairPlace
+<CMD> getPlaceMode -macroPlaceMode -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> set gpsPrivate::coegIsGbSignedSeedNl 0
+<CMD_INTERNAL> spInternalUse TDGP recoverTimingSpare
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> setPlaceMode -reset -expHiddenFastMode
+<CMD> getPlaceMode -tcg2Pass -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> getPlaceMode -fp -quiet
+INFO: Finished place_design in floorplan mode - no legalization done.
+
+<CMD> getPlaceMode -quickCTS -quiet
+<CMD> set spgFlowInInitialPlace 0
+<CMD> getPlaceMode -user -maxRouteLayer
+<CMD> getPlaceMode -place_global_exp_special_setup_for_nvidia -quiet
+<CMD_INTERNAL> spInternalUse TDGP resetIgnoreNetLoad
+<CMD> getDesignMode -quiet -flowEffort
+<CMD> report_message -end_cmd
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+WARNING   TA-112              20  A timing loop was found in the design. T...
+WARNING   TA-146               1  A combinational timing loop(s) was found...
+*** Message Summary: 22 warning(s), 0 error(s)
+
+<CMD> um::create_snapshot -name final -auto min
+<CMD> um::pop_snapshot_stack
+<CMD> um::create_snapshot -name place_design
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> fit
+<CMD> fit
+<CMD> setPlaceMode -fp true
+<CMD> report_message -start_cmd
+<CMD> getPlaceMode -user -maxRouteLayer
+<CMD> getPlaceMode -quiet -adaptiveFlowMode
+<CMD> getPlaceMode -timingDriven -quiet
+<CMD> getPlaceMode -adaptive -quiet
+<CMD> getPlaceMode -relaxSoftBlockageMode -quiet
+<CMD> getPlaceMode -user -relaxSoftBlockageMode
+<CMD> getPlaceMode -ignoreScan -quiet
+<CMD> getPlaceMode -user -ignoreScan
+<CMD> getPlaceMode -repairPlace -quiet
+<CMD> getPlaceMode -user -repairPlace
+<CMD> getPlaceMode -inPlaceOptMode -quiet
+<CMD> getPlaceMode -quiet -bypassFlowEffortHighChecking
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -place_global_exp_special_setup_for_nvidia -quiet
+<CMD> um::push_snapshot_stack
+<CMD> getDesignMode -quiet -flowEffort
+<CMD> getDesignMode -highSpeedCore -quiet
+<CMD> getPlaceMode -quiet -adaptive
+<CMD> set spgFlowInInitialPlace 1
+<CMD> getPlaceMode -sdpAlignment -quiet
+<CMD> getPlaceMode -softGuide -quiet
+<CMD> getPlaceMode -useSdpGroup -quiet
+<CMD> getPlaceMode -sdpAlignment -quiet
+<CMD> getPlaceMode -enableDbSaveAreaPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> getPlaceMode -sdpPlace -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -sdpPlace -quiet
+<CMD> getPlaceMode -groupHighLevelClkGate -quiet
+<CMD_INTERNAL> setvar spgRptErrorForScanConnection 0
+<CMD> getPlaceMode -place_global_exp_allow_missing_scan_chain -quiet
+<CMD> getPlaceMode -place_check_library -quiet
+<CMD> getPlaceMode -trimView -quiet
+<CMD> getPlaceMode -expTrimOptBeforeTDGP -quiet
+<CMD> getPlaceMode -quiet -useNonTimingDeleteBufferTree
+<CMD> getPlaceMode -congEffort -quiet
+<CMD> getPlaceMode -relaxSoftBlockageMode -quiet
+<CMD> getPlaceMode -user -relaxSoftBlockageMode
+<CMD> getPlaceMode -ignoreScan -quiet
+<CMD> getPlaceMode -user -ignoreScan
+<CMD> getPlaceMode -repairPlace -quiet
+<CMD> getPlaceMode -user -repairPlace
+<CMD> getPlaceMode -congEffort -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -timingDriven -quiet
+<CMD> getPlaceMode -user -timingDriven
+<CMD> getPlaceMode -fastFp -quiet
+<CMD> getPlaceMode -clusterMode -quiet
+<CMD> get_proto_model -type_match {flex_module flex_instgroup} -committed -name -tcl
+<CMD> getPlaceMode -inPlaceOptMode -quiet
+<CMD> getPlaceMode -quiet -bypassFlowEffortHighChecking
+<CMD> getPlaceMode -ultraCongEffortFlow -quiet
+<CMD> getPlaceMode -forceTiming -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getExtractRCMode -quiet -engine
+<CMD> getAnalysisMode -quiet -clkSrcPath
+<CMD> getAnalysisMode -quiet -clockPropagation
+<CMD> getAnalysisMode -quiet -cppr
+<CMD> setExtractRCMode -engine preRoute
+<CMD> setAnalysisMode -clkSrcPath false -clockPropagation forcedIdeal
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD_INTERNAL> isAnalysisModeSetup
+<CMD> getPlaceMode -tdgpResetCteTG -quiet
+<CMD> getPlaceMode -macroPlaceMode -quiet
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD_INTERNAL> spInternalUse TDGP ignoreTimingSpare
+<CMD> set gpsPrivate::coegIsGbSignedSeedNl 0
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -quiet -expNewFastMode
+<CMD> setPlaceMode -expHiddenFastMode 1
+<CMD> setPlaceMode -reset -ignoreScan
+<CMD> getPlaceMode -quiet -place_global_exp_auto_finish_floorplan
+<CMD> getPlaceMode -quiet -IOSlackAdjust
+*** Starting placeDesign default flow ***
+<CMD> getPlaceMode -quiet -useNonTimingDeleteBufferTree
+<CMD> getPlaceMode -quiet -prePlaceOptSimplifyNetlist
+<CMD> getPlaceMode -quiet -enablePrePlaceOptimizations
+<CMD> getPlaceMode -quiet -prePlaceOptDecloneInv
+<CMD> deleteBufferTree -decloneInv
+*** Start deleteBufferTree ***
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+Deleted 0 physical inst  (cell - / prefix -).
+*** Starting "NanoPlace(TM) placement v#10 (mem=1071.1M)" ...
+<CMD> setDelayCalMode -engine feDc
+No user setting net weight.
+Options: clkGateAware pinGuide congEffort=low gpeffort=fp 
+#std cell=489 (0 fixed + 489 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=128 #net=621 #term=1814 #term/net=2.92, #fixedIo=128, #floatIo=0, #fixedPin=23, #floatPin=0
+stdCell: 489 single + 0 double + 0 multi
+Total standard cell length = 3.0856 (mm), area = 0.0173 (mm^2)
+Average module density = 0.053.
+Density for the design = 0.053.
+       = stdcell_area 5510 sites (17279 um^2) / alloc_area 104652 sites (328189 um^2).
+Pin Density = 0.01733.
+            = total # of pins 1814 / total area 104652.
+=== lastAutoLevel = 8 
+**WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+Iteration  1: Total net bbox = 1.569e+04 (7.55e+03 8.14e+03)
+              Est.  stn bbox = 1.866e+04 (8.86e+03 9.80e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration  2: Total net bbox = 1.569e+04 (7.55e+03 8.14e+03)
+              Est.  stn bbox = 1.866e+04 (8.86e+03 9.80e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration  3: Total net bbox = 1.075e+04 (4.12e+03 6.63e+03)
+              Est.  stn bbox = 1.441e+04 (5.86e+03 8.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration  4: Total net bbox = 1.036e+04 (4.01e+03 6.35e+03)
+              Est.  stn bbox = 1.391e+04 (5.76e+03 8.15e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration  5: Total net bbox = 9.624e+03 (3.76e+03 5.87e+03)
+              Est.  stn bbox = 1.286e+04 (5.46e+03 7.40e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration  6: Total net bbox = 9.004e+03 (3.46e+03 5.55e+03)
+              Est.  stn bbox = 1.195e+04 (5.10e+03 6.85e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration  7: Total net bbox = 1.137e+04 (5.34e+03 6.02e+03)
+              Est.  stn bbox = 1.433e+04 (7.00e+03 7.32e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration  8: Total net bbox = 1.137e+04 (5.34e+03 6.02e+03)
+              Est.  stn bbox = 1.433e+04 (7.00e+03 7.32e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration  9: Total net bbox = 1.344e+04 (6.23e+03 7.21e+03)
+              Est.  stn bbox = 1.666e+04 (8.04e+03 8.62e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration 10: Total net bbox = 1.344e+04 (6.23e+03 7.21e+03)
+              Est.  stn bbox = 1.666e+04 (8.04e+03 8.62e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+Iteration 11: Total net bbox = 1.344e+04 (6.23e+03 7.21e+03)
+              Est.  stn bbox = 1.666e+04 (8.04e+03 8.62e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1058.3M
+*** cost = 1.344e+04 (6.23e+03 7.21e+03) (cpu for global=0:00:00.1) real=0:00:00.0***
+Solver runtime cpu: 0:00:00.0 real: 0:00:00.1
+Core Placement runtime cpu: 0:00:00.1 real: 0:00:00.0
+*** End of Placement (cpu=0:00:00.1, real=0:00:00.0, mem=1058.3M) ***
+<CMD> setDelayCalMode -engine aae
+<CMD> getPlaceMode -quiet -tdgpAdjustNetWeightBySlack
+<CMD> get_ccopt_clock_trees *
+<CMD> getPlaceMode -exp_insert_guidance_clock_tree -quiet
+<CMD> getPlaceMode -exp_cluster_based_high_fanout_buffering -quiet
+<CMD> getPlaceMode -quiet -cong_repair_commit_clock_net_route_attr
+<CMD> getPlaceMode -enableDbSaveAreaPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> setPlaceMode -reset -improveWithPsp
+<CMD> getPlaceMode -quiet -debugGlobalPlace
+<CMD> getPlaceMode -congRepair -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -nrgrAware -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -enableCongRepairV3 -quiet
+<CMD> getPlaceMode -user -rplaceIncrNPClkGateAwareMode
+<CMD> getPlaceMode -user -congRepairMaxIter
+<CMD> getPlaceMode -quiet -congRepairPDClkGateMode4
+<CMD> setPlaceMode -rplaceIncrNPClkGateAwareMode 4
+<CMD> getPlaceMode -quiet -congEffort
+<CMD> setPlaceMode -congRepairMaxIter 1
+<CMD> getDesignMode -quiet -congEffort
+<CMD> getPlaceMode -quiet -congRepairPDClkGateMode4
+<CMD> setPlaceMode -reset -rplaceIncrNPClkGateAwareMode
+<CMD> setPlaceMode -reset -congRepairMaxIter
+<CMD> getPlaceMode -congRepairCleanupPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> getPlaceMode -tdgpDumpStageTiming -quiet
+*** Finishing placeDesign default flow ***
+<CMD> getPlaceMode -quiet -tdgpAdjustNetWeightBySlack
+<CMD> getPlaceMode -exp_slack_driven -quiet
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 0, mem = 1058.3M **
+<CMD> getPlaceMode -trimView -quiet
+<CMD> getOptMode -quiet -viewOptPolishing
+<CMD> getOptMode -quiet -fastViewOpt
+<CMD_INTERNAL> spInternalUse deleteViewOptManager
+<CMD> setAnalysisMode -clkSrcPath true -clockPropagation sdcControl
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> setExtractRCMode -engine preRoute
+<CMD> setPlaceMode -reset -relaxSoftBlockageMode
+<CMD> setPlaceMode -reset -ignoreScan
+<CMD> setPlaceMode -reset -repairPlace
+<CMD> getPlaceMode -macroPlaceMode -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> set gpsPrivate::coegIsGbSignedSeedNl 0
+<CMD_INTERNAL> spInternalUse TDGP recoverTimingSpare
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> setPlaceMode -reset -expHiddenFastMode
+<CMD> getPlaceMode -tcg2Pass -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> getPlaceMode -fp -quiet
+INFO: Finished place_design in floorplan mode - no legalization done.
+
+<CMD> remove_rf_constraint
+<CMD> getPlaceMode -quickCTS -quiet
+<CMD> set spgFlowInInitialPlace 0
+<CMD> getPlaceMode -user -maxRouteLayer
+<CMD> getPlaceMode -place_global_exp_special_setup_for_nvidia -quiet
+<CMD_INTERNAL> spInternalUse TDGP resetIgnoreNetLoad
+<CMD> getDesignMode -quiet -flowEffort
+<CMD> report_message -end_cmd
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+WARNING   TA-146               1  A combinational timing loop(s) was found...
+*** Message Summary: 2 warning(s), 0 error(s)
+
+<CMD> um::create_snapshot -name final -auto min
+<CMD> um::pop_snapshot_stack
+<CMD> um::create_snapshot -name place_design
+<CMD> getPlaceMode -exp_slack_driven -quiet
+ambiguous command name "re": read readBumpLocation readDieAbstract readFlipChipProperty readIoUpdate readPackage readSdpFile readTSVConfig readTransitionFile read_activity_file read_codesign_die_abstract read_parallel_edit_files read_parasitics read_partition read_power_intent read_power_rail_results read_sai read_sdf read_spdf read_stream read_twf rechainPowerSwitch reclaimArea recreatePtnCellBlockage redirect redo redraw refineMacro refinePlace refine_macro_place regexp registerTrigger register_selection_callback regsub remove_assigns remove_from_collection remove_gui_marker remove_litho_blocks remove_nulls remove_pattern_fixing_blockages rename reorganizeFanout replaceLefMacro replacePowerSwitch replace_proto_model reportAlwaysOnBuffer reportBudget reportBusSinkGroup reportCapViolation reportCellPad reportCongestArea reportCongestion reportCritInstance reportCritNet reportCritTerm reportDanglingPort reportDeCap reportDeCapCellCandidates reportDelayCalculation reportDensityMap reportFanoutViolation reportFootPrint reportFreqViolation reportGateCount reportIgnoredNets reportIlmStatus reportInstPad reportIsolation reportJtagInst reportLegalWireWidthForBump reportLengthViolation reportMultiBitFFs reportNetGroup reportNetStat reportPathGroupOptions reportPinAssignStatistics reportPinDensityMap reportPipeline reportPowerDomain reportPowerRoute reportPowerSwitch reportProbePins reportRC reportRoute reportRouteTypeConstraints reportScanCell reportScanChainPartition reportSeedConnection reportSelect reportShield reportShifter reportSpecialRoute reportTimingLib reportTranViolation reportUnalignedNets reportUnsnapBlocks reportVoltage reportVtInstCount reportWire report_analysis_coverage report_analysis_summary report_analysis_views report_annotated_assertions report_annotated_check report_annotated_delay report_annotated_parasitics report_annotations report_aocv_derate report_area report_case_analysis report_ccopt_cell_halo_violations report_ccopt_clock_tree_convergence report_ccopt_clock_tree_structure report_ccopt_clock_trees report_ccopt_pin_insertion_delays report_ccopt_preserved_clock_tree_ports report_ccopt_skew_groups report_ccopt_worst_chain report_cell_edge_spacing report_cell_edge_type report_cell_instance_timing report_cell_stack_area report_cell_stack_group report_clock_gating_check report_clock_propagation report_clock_timing report_clocks report_command_mode report_constraint report_cppr report_dataflow_bus report_design report_double_clocking report_etm_arcs report_fanin report_fanout report_inactive_arcs report_inst_space_group report_instance_cdb report_instance_library report_instance_power report_lde_analysis report_lib_cells report_message report_metal_fill report_min_pulse_width report_mode report_narrow_channel report_net report_net_parasitics report_noise report_oa_lib report_obj_connectivity report_path_exceptions report_path_groups report_pg_keepout report_ports report_power report_power_rail_results report_preserves report_property report_proto_model report_rcdb report_resource report_route report_sai_constraint report_socv_library report_statistical_timing_derate_factors report_timing report_timing_derate report_tracks report_unit_parasitics report_vector_profile report_voltage_scaling report_wire_load resetBusGuideMultiColors resetModifiedBudget resetMultiColorsHier resetPathGroupOptions reset_all_ccopt_preserved_clock_tree_ports reset_annotated_check reset_annotated_delay reset_annotated_transition reset_aocv_stage_weight reset_case_analysis reset_ccopt_config reset_ccopt_preserved_clock_tree_port reset_ccopt_routing_state reset_clock reset_clock_gating_check reset_clock_groups reset_clock_latency reset_clock_sense reset_clock_transition reset_clock_tree_latency reset_clock_uncertainty reset_data_check reset_db reset_disable_clock_gating_check reset_disable_timing reset_drive reset_driving_cell reset_generated_clock reset_ideal_latency reset_ideal_net reset_ideal_network reset_ideal_transition reset_input_delay reset_load reset_macro_place_constraint reset_max_capacitance reset_max_fanout reset_max_time_borrow reset_max_transition reset_min_capacitance reset_min_fanout reset_min_pulse_width reset_min_transition reset_mode reset_net_is_edit_flag reset_output_delay reset_parasitics reset_path_adjust_group reset_path_exception reset_path_group reset_power_activity reset_propagated_clock reset_property reset_pulse_clock_max_transition reset_pulse_clock_max_width reset_pulse_clock_min_transition reset_pulse_clock_min_width reset_resistance reset_sdf_assertions reset_spare_insts reset_timing_derate reset_wire_load_mode reset_wire_load_model reset_wire_load_selection_group resizeBlackBox resizeFloorplan restoreDesign restoreRC restore_ccopt_config restore_power_database resume retrieveLCVFromEcoOaDesign return
+<CMD> REPORTSPECIALROUTE
+**ERROR: (IMPTCM-30):	Command "REPORTSPECIALROUTE" is not registered in command manager.
+ambiguous command name "re": read readBumpLocation readDieAbstract readFlipChipProperty readIoUpdate readPackage readSdpFile readTSVConfig readTransitionFile read_activity_file read_codesign_die_abstract read_parallel_edit_files read_parasitics read_partition read_power_intent read_power_rail_results read_sai read_sdf read_spdf read_stream read_twf rechainPowerSwitch reclaimArea recreatePtnCellBlockage redirect redo redraw refineMacro refinePlace refine_macro_place regexp registerTrigger register_selection_callback regsub remove_assigns remove_from_collection remove_gui_marker remove_litho_blocks remove_nulls remove_pattern_fixing_blockages rename reorganizeFanout replaceLefMacro replacePowerSwitch replace_proto_model reportAlwaysOnBuffer reportBudget reportBusSinkGroup reportCapViolation reportCellPad reportCongestArea reportCongestion reportCritInstance reportCritNet reportCritTerm reportDanglingPort reportDeCap reportDeCapCellCandidates reportDelayCalculation reportDensityMap reportFanoutViolation reportFootPrint reportFreqViolation reportGateCount reportIgnoredNets reportIlmStatus reportInstPad reportIsolation reportJtagInst reportLegalWireWidthForBump reportLengthViolation reportMultiBitFFs reportNetGroup reportNetStat reportPathGroupOptions reportPinAssignStatistics reportPinDensityMap reportPipeline reportPowerDomain reportPowerRoute reportPowerSwitch reportProbePins reportRC reportRoute reportRouteTypeConstraints reportScanCell reportScanChainPartition reportSeedConnection reportSelect reportShield reportShifter reportSpecialRoute reportTimingLib reportTranViolation reportUnalignedNets reportUnsnapBlocks reportVoltage reportVtInstCount reportWire report_analysis_coverage report_analysis_summary report_analysis_views report_annotated_assertions report_annotated_check report_annotated_delay report_annotated_parasitics report_annotations report_aocv_derate report_area report_case_analysis report_ccopt_cell_halo_violations report_ccopt_clock_tree_convergence report_ccopt_clock_tree_structure report_ccopt_clock_trees report_ccopt_pin_insertion_delays report_ccopt_preserved_clock_tree_ports report_ccopt_skew_groups report_ccopt_worst_chain report_cell_edge_spacing report_cell_edge_type report_cell_instance_timing report_cell_stack_area report_cell_stack_group report_clock_gating_check report_clock_propagation report_clock_timing report_clocks report_command_mode report_constraint report_cppr report_dataflow_bus report_design report_double_clocking report_etm_arcs report_fanin report_fanout report_inactive_arcs report_inst_space_group report_instance_cdb report_instance_library report_instance_power report_lde_analysis report_lib_cells report_message report_metal_fill report_min_pulse_width report_mode report_narrow_channel report_net report_net_parasitics report_noise report_oa_lib report_obj_connectivity report_path_exceptions report_path_groups report_pg_keepout report_ports report_power report_power_rail_results report_preserves report_property report_proto_model report_rcdb report_resource report_route report_sai_constraint report_socv_library report_statistical_timing_derate_factors report_timing report_timing_derate report_tracks report_unit_parasitics report_vector_profile report_voltage_scaling report_wire_load resetBusGuideMultiColors resetModifiedBudget resetMultiColorsHier resetPathGroupOptions reset_all_ccopt_preserved_clock_tree_ports reset_annotated_check reset_annotated_delay reset_annotated_transition reset_aocv_stage_weight reset_case_analysis reset_ccopt_config reset_ccopt_preserved_clock_tree_port reset_ccopt_routing_state reset_clock reset_clock_gating_check reset_clock_groups reset_clock_latency reset_clock_sense reset_clock_transition reset_clock_tree_latency reset_clock_uncertainty reset_data_check reset_db reset_disable_clock_gating_check reset_disable_timing reset_drive reset_driving_cell reset_generated_clock reset_ideal_latency reset_ideal_net reset_ideal_network reset_ideal_transition reset_input_delay reset_load reset_macro_place_constraint reset_max_capacitance reset_max_fanout reset_max_time_borrow reset_max_transition reset_min_capacitance reset_min_fanout reset_min_pulse_width reset_min_transition reset_mode reset_net_is_edit_flag reset_output_delay reset_parasitics reset_path_adjust_group reset_path_exception reset_path_group reset_power_activity reset_propagated_clock reset_property reset_pulse_clock_max_transition reset_pulse_clock_max_width reset_pulse_clock_min_transition reset_pulse_clock_min_width reset_resistance reset_sdf_assertions reset_spare_insts reset_timing_derate reset_wire_load_mode reset_wire_load_model reset_wire_load_selection_group resizeBlackBox resizeFloorplan restoreDesign restoreRC restore_ccopt_config restore_power_database resume retrieveLCVFromEcoOaDesign return
+child process exited abnormally
+<CMD> reportCongestion
+<CMD> fit
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+ambiguous command name "f": fblocked fconfigure fcopy fcroute file fileevent fillNotch filter_collection findLefEquivalentCells findPinPortNumber find_global finishFloorplan fit fixACLimitViolation fixAllIos fixBondPad fixOpenFill fixVia fix_boundary_overlaps fix_multi_drivers flattenCoverCell flattenIlm flattenPartition flipModule flipOrRotateObject flipSdpObject floorPlan flush focus font for forall foreach foreach_in_collection fork format fp_save_fp frame freeDesign free_power_intent
+ambiguous command name "rou": routeAndBufferBusSinkGroup routeDesign routePGPinUseSignalRoute routePointToPoint route_ccopt_clock_tree_nets route_fix_signoff_drc route_opt_design
+<CMD> routeDesign
+#% Begin routeDesign (date=12/26 19:24:36, mem=932.0M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 932.06 (MB), peak = 944.83 (MB)
+#my_rc_corner_worst has no qx tech file defined
+#No active RC corner or QRC tech file is missing.
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: multi-cut via swapping will be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+#**INFO: auto set of routeReserveSpaceForMultiCut to true
+#**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+Begin checking placement ... (start mem=1066.3M, init mem=1066.3M)
+Not Placed on Placement Grid:	489
+Overlapping with other instance:	486
+Orientation Violation:	1
+*info: Placed = 489           
+*info: Unplaced = 0           
+Placement Density:5.27%(17279/328189)
+Placement Density (including fixed std cells):5.27%(17279/328189)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=1066.3M)
+#WARNING (NRIG-77) Found placement violations. Please investigate and correct before routing. Routing with placement violations can cause long runtime and may be irresolvable.
+#Use routeDesign -placementCheck to stop on violations. Use routeDesign -noPlacementCheck to skip the check.
+#**INFO: auto set of routeWithTimingDriven to true
+#**INFO: auto set of routeWithSiDriven to true
+**WARN: (IMPCK-8086):	The command changeUseClockNetStatus is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1066.3M) ***
+#**INFO: auto set of droutePostRouteSwapVia to multiCut
+% Begin globalDetailRoute (date=12/26 19:24:36, mem=933.6M)
+
+globalDetailRoute
+
+#setNanoRouteMode -droutePostRouteSwapVia "multiCut"
+#setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+#setNanoRouteMode -routeReserveSpaceForMultiCut true
+#setNanoRouteMode -routeWithSiDriven true
+#setNanoRouteMode -routeWithTimingDriven true
+#Start globalDetailRoute on Tue Dec 26 19:24:36 2023
+#
+#Generating timing data, please wait...
+#621 total nets, 0 already routed, 0 will ignore in trialRoute
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+#Dump tif for version 2.1
+**WARN: (TA-146):	A combinational timing loop(s) was found in the design. You can find detailed information about all timing loops in the file './CTE_loops.rpt'. You should examine loop break points chosen automatically by the tool to ensure they are the most appropriate break locations. It is further recommended that validated loop break points be added to the constraint set via set_disable_timing to ensure consistent handling during the design flow.
+AAE DB initialization (MEM=1135.41 CPU=0:00:00.0 REAL=0:00:00.0) 
+Total number of fetched objects 781
+End delay calculation. (MEM=1384.88 CPU=0:00:00.1 REAL=0:00:00.0)
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or setExtractRCMode  command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 976.84 (MB), peak = 1003.05 (MB)
+#Done generating timing data.
+#ERROR (NRIG-92) INSTANCE utx/uclk_reg is not placed on the manufacturing grid. All instances must be legally placed. Correct the placement before continuing.
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 25.41 (MB)
+#Total memory = 958.98 (MB)
+#Peak memory = 1003.05 (MB)
+#WARNING (NRIF-19) Failed to complete globalDetailRoute on Tue Dec 26 19:24:37 2023
+#
+% End globalDetailRoute (date=12/26 19:24:37, total cpu=0:00:00.7, real=0:00:01.0, peak res=1003.1M, current mem=1003.1M)
+#routeDesign: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 959.23 (MB), peak = 1003.05 (MB)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-6197          1  The Cap table file is not specified. Thi...
+WARNING   IMPEXT-3493          1  The design extraction status has been re...
+WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
+WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+WARNING   TA-146               1  A combinational timing loop(s) was found...
+*** Message Summary: 5 warning(s), 0 error(s)
+
+#% End routeDesign (date=12/26 19:24:37, total cpu=0:00:00.7, real=0:00:01.0, peak res=1003.1M, current mem=959.2M)
+0
+<CMD> reportCongestion -trialRoute
+Usage: (1.2%H 1.5%V) = (7.319e+03um 1.354e+04um) = (1307 2417)
+Overflow: 43 = 13 (0.11% H) + 30 (0.24% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -5:	4	 0.03%	3	 0.02%
+ -4:	0	 0.00%	2	 0.02%
+ -3:	0	 0.00%	3	 0.02%
+ -2:	0	 0.00%	3	 0.02%
+ -1:	4	 0.03%	2	 0.02%
+--------------------------------------
+  0:	2	 0.02%	6	 0.05%
+  1:	286	 2.31%	165	 1.34%
+  2:	344	 2.78%	134	 1.09%
+  3:	189	 1.53%	67	 0.54%
+  4:	195	 1.58%	8	 0.06%
+  5:	11341	91.72%	11943	96.81%
+<CMD> selectWire 270.1600 622.2200 844.7200 623.7000 1 VSS
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectMarker 338.2020 586.1700 348.8420 591.7700 -1 12 85
+<CMD> deselectAll
+<CMD> selectMarker 385.1350 580.3590 390.7350 583.1590 -1 12 88
+<CMD> gui_select -rect {390.594 582.478 396.690 578.059}
+<CMD> deselectAll
+<CMD> selectMarker 385.1350 580.3590 390.7350 583.1590 -1 12 88
+<CMD> deselectAll
+<CMD> selectMarker 385.1350 580.3590 390.7350 583.1590 -1 12 88
+<CMD> deselectAll
+<CMD> selectMarker 385.1350 580.3590 390.7350 583.1590 -1 12 88
+<CMD> deselectAll
+<CMD> selectMarker 385.1350 580.3590 390.7350 583.1590 -1 12 88
+<CMD> deselectAll
+<CMD> selectMarker 385.1350 580.3590 390.7350 583.1590 -1 12 88
+<CMD> gui_select -rect {366.514 608.844 400.348 559.923}
+<CMD> deselectAll
+<CMD> gui_select -rect {355.846 607.929 412.844 551.541}
+<CMD> gui_select -rect {373.373 589.184 392.423 581.716}
+<CMD> deselectAll
+<CMD> selectMarker 382.3350 578.9590 393.5350 584.5590 -1 12 85
+<CMD> deselectAll
+<CMD> selectMarker 385.1350 580.3590 390.7350 583.1590 -1 12 88
+<CMD> deselectAll
+<CMD> fit
+
+*** Memory Usage v#1 (Current mem = 1200.246M, initial mem = 179.895M) ***
+*** Message Summary: 1664 warning(s), 25 error(s)
+
+--- Ending "Innovus" (totcpu=0:03:06, real=0:26:21, mem=1200.2M) ---

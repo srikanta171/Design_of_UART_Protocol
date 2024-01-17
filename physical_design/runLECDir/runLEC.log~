@@ -1,0 +1,1014 @@
+                          CONFORMAL (R)
+                   Version 17.20-s300 (10-Feb-2018) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2018. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 2146 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: version
+Version 17.20-s300 (10-Feb-2018) (64 bit executable)
+// Command: hostname
+cadence1
+// Command: date
+Thu Dec 28 13:18:49 2023
+// Command: pwd
+/home/vlsi1/23EC4224/project/UART_protocol/physical_design
+// Command: usage
+CPU time     : 0.06    seconds
+Memory usage : 222.49  M bytes
+// Command: set dofile abort off
+// Command: set undefined cell Black_box
+// Command: set rule handling -limit 1000 *
+// Command: read library -both -liberty -statetable  /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib \
+//             /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib \
+//             /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib \
+//             /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_min.lib \
+// Parsing file /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib ...
+// Parsing file /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib ...
+// Parsing file /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib ...
+// Parsing file /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_min.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:4)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:8)
+// Note: (UDP1.1) Swapped set and reset of DFF/DLAT (occurrence:6)
+// Note: (UDP3) Merged redundant user-defined DFF/DLAT primitive(s) (occurrence:6)
+// Warning: (IGN3.2) Duplicate modules/entities are detected. Subsequent modules/entities are ignored (occurrence:627)
+// Note: Read Liberty library successfully
+// Command: report rule check -library
+RTL9.17: Cell doesn't have any output pins or all output pins are undriven (blackboxed)
+    Type: Golden library     Severity: Warning    Occurrence: 4
+    Type: Revised library    Severity: Warning    Occurrence: 4
+RTL14: Signal has input but it has no output
+    Type: Golden library     Severity: Warning    Occurrence: 8
+    Type: Revised library    Severity: Warning    Occurrence: 8
+UDP1.1: Swapped set and reset of DFF/DLAT
+    Type: Golden library     Severity: Note       Occurrence: 6
+    Type: Revised library    Severity: Note       Occurrence: 6
+UDP3: Merged redundant user-defined DFF/DLAT primitive(s)
+    Type: Golden library     Severity: Note       Occurrence: 6
+    Type: Revised library    Severity: Note       Occurrence: 6
+IGN3.2: Duplicate modules/entities are detected. Subsequent modules/entities are ignored
+    Type: Golden library     Severity: Warning    Occurrence: 627
+    Type: Revised library    Severity: Warning    Occurrence: 627
+// Command: usage
+CPU time     : 0.43    seconds
+Memory usage : 257.32  M bytes
+// Command: read design -golden   ../rtl/uart.v   -verilog 
+// Parsing file ../rtl/uart.v ...
+// Golden root module is set to 'uart_top'
+// Warning: (RTL1.2) Variable/signal is assigned by multiple non-blocking assignments (occurrence:1)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:4)
+// Warning: (RTL7.3) Array index in RHS might be out of range (occurrence:1)
+// Warning: (IGN1.1) Initial construct is not supported. The entire initial construct will be ignored (occurrence:6)
+// Warning: (HRC3.8) Port positional association occurs in an instantiation (occurrence:2)
+// Warning: (HRC3.15) Parameter positional association occurs in an instantiation (occurrence:2)
+// Note: Read VERILOG design successfully
+// Command: read design -revised  ../synthesis/UART_netlist.v   -verilog 
+// Parsing file ../synthesis/UART_netlist.v ...
+// Revised root module is set to 'uart_top'
+// Warning: (RTL1.1) Variable/signal is assigned by more than one concurrent statement (occurrence:11)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:1)
+// Warning: (HRC3.8) Port positional association occurs in an instantiation (occurrence:2)
+// Warning: (HRC3.10) Input port connects to instance output pin. This might cause multiple drivers to the net (occurrence:11)
+// Note: Read VERILOG design successfully
+// Command: report design data
+============================================
+Summary           Golden         Revised
+============================================
+Design-modules         3               3
+Library-cells         36             554
+============================================
+Primitives      Golden              Revised
+============================================
+INPUT               12                   12
+OUTPUT              11                   11
+--------------------------------------------
+AND        *       387                  333
+BUF        *         3                   23
+DFF        *       153                  151
+INV        *        21                   83
+MUX        *       237                    0
+NAND       *         4                   44
+NOR        *        12                   39
+OR         *        97                  129
+XOR        *       124                   82
+------ word-level --------------------------
+ADD        *         4                    0
+GT         *         1                    0
+LE         *         2                    0
+LT         *         3                    0
+WMUX       *        16                    0
+WSEL       *        10                    0
+------ don't care --------------------------
+X-assignments        1                    0
+--------------------------------------------
+Total             1039                  884
+
+// Command: report black box
+// Command: report floating signal
+Undriven nets in Golden:
+Undriven pins in Golden:
+Undriven nets in Revised:
+Undriven pins in Revised:
+// Command: usage
+CPU time     : 0.45    seconds
+Memory usage : 269.55  M bytes
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Warning: (F34) Converted 1 X assignment(s) as don't care(s)
+// Processing Revised ...
+// Modeling Revised ...
+// (F1) Created 22 wire resolution gate(s) due to multiple-driven net(s)
+// (F3) Cut 22 feedback loop(s), 22 with name
+// Warning: Golden and Revised have different numbers of key points:
+// Golden  key points = 176
+// Revised key points = 196
+// Mapping key points ...
+// Warning: Golden has 2 unmapped key points
+// Warning: Revised has 22 unmapped key points
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            12     11     151       174     
+--------------------------------------------------------------------------------
+Revised           12     11     151       174     
+================================================================================
+Unmapped points:
+================================================================================
+Golden:
+--------------------------------------------------------------------------------
+Unmapped points   DFF       Total   
+--------------------------------------------------------------------------------
+Not-mapped        2         2       
+================================================================================
+Revised:
+--------------------------------------------------------------------------------
+Unmapped points   CUT       Total   
+--------------------------------------------------------------------------------
+Not-mapped        22        22      
+================================================================================
+// Warning: Key point mapping is incomplete
+// Command: report mapped point -summary
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            12     11     151       174     
+--------------------------------------------------------------------------------
+Revised           12     11     151       174     
+================================================================================
+// Command: report unmapped point
+Unmapped point (not-mapped):
+  (G)   33   DFF  /utx/state_reg[0]
+Unmapped point (not-mapped):
+  (G)   101  DFF  /rtx/state_reg[1]
+Unmapped point (not-mapped):
+  (R)   175  CUT  /rst
+Unmapped point (not-mapped):
+  (R)   176  CUT  /rx
+Unmapped point (not-mapped):
+  (R)   177  CUT  /dintx[7]
+Unmapped point (not-mapped):
+  (R)   178  CUT  /dintx[6]
+Unmapped point (not-mapped):
+  (R)   179  CUT  /dintx[5]
+Unmapped point (not-mapped):
+  (R)   180  CUT  /dintx[4]
+Unmapped point (not-mapped):
+  (R)   181  CUT  /dintx[3]
+Unmapped point (not-mapped):
+  (R)   182  CUT  /dintx[2]
+Unmapped point (not-mapped):
+  (R)   183  CUT  /dintx[1]
+Unmapped point (not-mapped):
+  (R)   184  CUT  /dintx[0]
+Unmapped point (not-mapped):
+  (R)   185  CUT  /newd
+Unmapped point (not-mapped):
+  (R)   186  CUT  /donerx
+Unmapped point (not-mapped):
+  (R)   187  CUT  /doutrx[0]
+Unmapped point (not-mapped):
+  (R)   188  CUT  /doutrx[1]
+Unmapped point (not-mapped):
+  (R)   189  CUT  /doutrx[2]
+Unmapped point (not-mapped):
+  (R)   190  CUT  /doutrx[3]
+Unmapped point (not-mapped):
+  (R)   191  CUT  /doutrx[4]
+Unmapped point (not-mapped):
+  (R)   192  CUT  /doutrx[5]
+Unmapped point (not-mapped):
+  (R)   193  CUT  /doutrx[6]
+Unmapped point (not-mapped):
+  (R)   194  CUT  /doutrx[7]
+Unmapped point (not-mapped):
+  (R)   195  CUT  /tx
+Unmapped point (not-mapped):
+  (R)   196  CUT  /donetx
+
+24 unmapped points reported
+================================================================================
+Golden:
+--------------------------------------------------------------------------------
+Unmapped points   DFF       Total   
+--------------------------------------------------------------------------------
+Not-mapped        2         2       
+================================================================================
+Revised:
+--------------------------------------------------------------------------------
+Unmapped points   CUT       Total   
+--------------------------------------------------------------------------------
+Not-mapped        22        22      
+================================================================================
+// Command: usage
+CPU time     : 0.49    seconds
+Memory usage : 298.59  M bytes
+// Command: add compare point -all
+// Warning: Golden has 2 unmapped key points which will not be compared
+// Warning: Revised has 22 unmapped key points which will not be compared
+// 162 compared points added to compare list
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           0      66        66      
+--------------------------------------------------------------------------------
+Non-equivalent       11     85        96      
+================================================================================
+// Command: usage
+CPU time     : 0.49    seconds
+Memory usage : 290.58  M bytes
+// Command: report compare data -noneq
+Compared points are: Non-equivalent
+  (G) + 13   PO   /tx
+  (R) + 13   PO   /tx
+
+Compared points are: Non-equivalent
+  (G) + 14   PO   /doutrx[7]
+  (R) + 14   PO   /doutrx[7]
+
+Compared points are: Non-equivalent
+  (G) + 15   PO   /doutrx[6]
+  (R) + 15   PO   /doutrx[6]
+
+Compared points are: Non-equivalent
+  (G) + 16   PO   /doutrx[5]
+  (R) + 16   PO   /doutrx[5]
+
+Compared points are: Non-equivalent
+  (G) + 17   PO   /doutrx[4]
+  (R) + 17   PO   /doutrx[4]
+
+Compared points are: Non-equivalent
+  (G) + 18   PO   /doutrx[3]
+  (R) + 18   PO   /doutrx[3]
+
+Compared points are: Non-equivalent
+  (G) + 19   PO   /doutrx[2]
+  (R) + 19   PO   /doutrx[2]
+
+Compared points are: Non-equivalent
+  (G) + 20   PO   /doutrx[1]
+  (R) + 20   PO   /doutrx[1]
+
+Compared points are: Non-equivalent
+  (G) + 21   PO   /doutrx[0]
+  (R) + 21   PO   /doutrx[0]
+
+Compared points are: Non-equivalent
+  (G) + 22   PO   /donetx
+  (R) + 22   PO   /donetx
+
+Compared points are: Non-equivalent
+  (G) + 23   PO   /donerx
+  (R) + 23   PO   /donerx
+
+Compared points are: Non-equivalent
+  (G) + 24   DFF  /utx/din_reg[7]
+  (R) + 166  DFF  /utx/din_reg[7]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 984  MUX  /utx/U$1/U$8
+  (R) + 1652 OR   /utx/g4620__4547/U$1
+
+Compared points are: Non-equivalent
+  (G) + 25   DFF  /utx/din_reg[6]
+  (R) + 165  DFF  /utx/din_reg[6]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 979  MUX  /utx/U$1/U$7
+  (R) + 1632 OR   /utx/g4615__9906/U$1
+
+Compared points are: Non-equivalent
+  (G) + 26   DFF  /utx/din_reg[5]
+  (R) + 164  DFF  /utx/din_reg[5]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 974  MUX  /utx/U$1/U$6
+  (R) + 1640 OR   /utx/g4617__4296/U$1
+
+Compared points are: Non-equivalent
+  (G) + 27   DFF  /utx/din_reg[4]
+  (R) + 163  DFF  /utx/din_reg[4]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 969  MUX  /utx/U$1/U$5
+  (R) + 1648 OR   /utx/g4619__1474/U$1
+
+Compared points are: Non-equivalent
+  (G) + 28   DFF  /utx/din_reg[3]
+  (R) + 162  DFF  /utx/din_reg[3]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 964  MUX  /utx/U$1/U$4
+  (R) + 1636 OR   /utx/g4616__8780/U$1
+
+Compared points are: Non-equivalent
+  (G) + 29   DFF  /utx/din_reg[2]
+  (R) + 161  DFF  /utx/din_reg[2]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 959  MUX  /utx/U$1/U$3
+  (R) + 1644 OR   /utx/g4618__3772/U$1
+
+Compared points are: Non-equivalent
+  (G) + 30   DFF  /utx/din_reg[1]
+  (R) + 160  DFF  /utx/din_reg[1]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 954  MUX  /utx/U$1/U$2
+  (R) + 1628 OR   /utx/g4613__5019/U$1
+
+Compared points are: Non-equivalent
+  (G) + 31   DFF  /utx/din_reg[0]
+  (R) + 159  DFF  /utx/din_reg[0]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 949  MUX  /utx/U$1/U$1
+  (R) + 1624 OR   /utx/g4612__1840/U$1
+
+Compared points are: Non-equivalent
+  (G) + 32   DFF  /utx/state_reg[1]
+  (R) + 167  DFF  /utx/state_reg[1]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1023 MUX  /utx/U$5/U$2
+  (R) + 1654 OR   /utx/g2__8757/U$1
+
+Compared points are: Non-equivalent
+  (G) + 35   DFF  /utx/counts_reg[31]
+  (R) + 158  DFF  /utx/counts_reg[31]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1347 MUX  /utx/U$11/U$32
+  (R) + 1657 AND  /utx/g2/U$1
+
+Compared points are: Non-equivalent
+  (G) + 36   DFF  /utx/counts_reg[30]
+  (R) + 157  DFF  /utx/counts_reg[30]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1338 MUX  /utx/U$11/U$31
+  (R) + 1422 OR   /utx/g4509__2703/U$1
+
+Compared points are: Non-equivalent
+  (G) + 37   DFF  /utx/counts_reg[29]
+  (R) + 156  DFF  /utx/counts_reg[29]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1329 MUX  /utx/U$11/U$30
+  (R) + 1415 OR   /utx/g4508__6083/U$1
+
+Compared points are: Non-equivalent
+  (G) + 38   DFF  /utx/counts_reg[28]
+  (R) + 155  DFF  /utx/counts_reg[28]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1320 MUX  /utx/U$11/U$29
+  (R) + 1410 OR   /utx/g4507__2250/U$1
+
+Compared points are: Non-equivalent
+  (G) + 39   DFF  /utx/counts_reg[27]
+  (R) + 154  DFF  /utx/counts_reg[27]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1311 MUX  /utx/U$11/U$28
+  (R) + 1405 OR   /utx/g4506__5266/U$1
+
+Compared points are: Non-equivalent
+  (G) + 40   DFF  /utx/counts_reg[26]
+  (R) + 153  DFF  /utx/counts_reg[26]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1302 MUX  /utx/U$11/U$27
+  (R) + 1400 OR   /utx/g4505__7114/U$1
+
+Compared points are: Non-equivalent
+  (G) + 41   DFF  /utx/counts_reg[25]
+  (R) + 152  DFF  /utx/counts_reg[25]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1293 MUX  /utx/U$11/U$26
+  (R) + 1395 OR   /utx/g4504__5703/U$1
+
+Compared points are: Non-equivalent
+  (G) + 42   DFF  /utx/counts_reg[24]
+  (R) + 151  DFF  /utx/counts_reg[24]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1284 MUX  /utx/U$11/U$25
+  (R) + 1390 OR   /utx/g4503__5953/U$1
+
+Compared points are: Non-equivalent
+  (G) + 43   DFF  /utx/counts_reg[23]
+  (R) + 150  DFF  /utx/counts_reg[23]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1275 MUX  /utx/U$11/U$24
+  (R) + 1349 OR   /utx/g4493__9682/U$1
+
+Compared points are: Non-equivalent
+  (G) + 44   DFF  /utx/counts_reg[22]
+  (R) + 149  DFF  /utx/counts_reg[22]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1266 MUX  /utx/U$11/U$23
+  (R) + 1381 OR   /utx/g4501__8757/U$1
+
+Compared points are: Non-equivalent
+  (G) + 45   DFF  /utx/counts_reg[21]
+  (R) + 148  DFF  /utx/counts_reg[21]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1257 MUX  /utx/U$11/U$22
+  (R) + 1377 OR   /utx/g4500__7118/U$1
+
+Compared points are: Non-equivalent
+  (G) + 46   DFF  /utx/counts_reg[20]
+  (R) + 147  DFF  /utx/counts_reg[20]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1248 MUX  /utx/U$11/U$21
+  (R) + 1373 OR   /utx/g4499__7675/U$1
+
+Compared points are: Non-equivalent
+  (G) + 47   DFF  /utx/counts_reg[19]
+  (R) + 146  DFF  /utx/counts_reg[19]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1239 MUX  /utx/U$11/U$20
+  (R) + 1369 OR   /utx/g4498__2391/U$1
+
+Compared points are: Non-equivalent
+  (G) + 48   DFF  /utx/counts_reg[18]
+  (R) + 145  DFF  /utx/counts_reg[18]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1230 MUX  /utx/U$11/U$19
+  (R) + 1365 OR   /utx/g4497__2900/U$1
+
+Compared points are: Non-equivalent
+  (G) + 49   DFF  /utx/counts_reg[17]
+  (R) + 144  DFF  /utx/counts_reg[17]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1221 MUX  /utx/U$11/U$18
+  (R) + 1361 OR   /utx/g4496__6877/U$1
+
+Compared points are: Non-equivalent
+  (G) + 50   DFF  /utx/counts_reg[16]
+  (R) + 143  DFF  /utx/counts_reg[16]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1212 MUX  /utx/U$11/U$17
+  (R) + 1353 OR   /utx/g4494__2683/U$1
+
+Compared points are: Non-equivalent
+  (G) + 51   DFF  /utx/counts_reg[15]
+  (R) + 142  DFF  /utx/counts_reg[15]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1203 MUX  /utx/U$11/U$16
+  (R) + 1385 OR   /utx/g4502__1786/U$1
+
+Compared points are: Non-equivalent
+  (G) + 52   DFF  /utx/counts_reg[14]
+  (R) + 141  DFF  /utx/counts_reg[14]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1194 MUX  /utx/U$11/U$15
+  (R) + 1357 OR   /utx/g4495__1309/U$1
+
+Compared points are: Non-equivalent
+  (G) + 53   DFF  /utx/counts_reg[13]
+  (R) + 140  DFF  /utx/counts_reg[13]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1185 MUX  /utx/U$11/U$14
+  (R) + 1335 OR   /utx/g4489__4547/U$1
+
+Compared points are: Non-equivalent
+  (G) + 54   DFF  /utx/counts_reg[12]
+  (R) + 139  DFF  /utx/counts_reg[12]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1176 MUX  /utx/U$11/U$13
+  (R) + 1286 OR   /utx/g4476__2250/U$1
+
+Compared points are: Non-equivalent
+  (G) + 55   DFF  /utx/counts_reg[11]
+  (R) + 138  DFF  /utx/counts_reg[11]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1167 MUX  /utx/U$11/U$12
+  (R) + 1330 OR   /utx/g4488__1474/U$1
+
+Compared points are: Non-equivalent
+  (G) + 56   DFF  /utx/counts_reg[10]
+  (R) + 137  DFF  /utx/counts_reg[10]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1158 MUX  /utx/U$11/U$11
+  (R) + 1326 OR   /utx/g4487__3772/U$1
+
+Compared points are: Non-equivalent
+  (G) + 57   DFF  /utx/counts_reg[9]
+  (R) + 136  DFF  /utx/counts_reg[9]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1149 MUX  /utx/U$11/U$10
+  (R) + 1322 OR   /utx/g4486__4296/U$1
+
+Compared points are: Non-equivalent
+  (G) + 58   DFF  /utx/counts_reg[8]
+  (R) + 135  DFF  /utx/counts_reg[8]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1140 MUX  /utx/U$11/U$9
+  (R) + 1318 OR   /utx/g4485__8780/U$1
+
+Compared points are: Non-equivalent
+  (G) + 59   DFF  /utx/counts_reg[7]
+  (R) + 134  DFF  /utx/counts_reg[7]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1131 MUX  /utx/U$11/U$8
+  (R) + 1314 OR   /utx/g4484__9906/U$1
+
+Compared points are: Non-equivalent
+  (G) + 60   DFF  /utx/counts_reg[6]
+  (R) + 133  DFF  /utx/counts_reg[6]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1122 MUX  /utx/U$11/U$7
+  (R) + 1310 OR   /utx/g4483__1857/U$1
+
+Compared points are: Non-equivalent
+  (G) + 61   DFF  /utx/counts_reg[5]
+  (R) + 132  DFF  /utx/counts_reg[5]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1113 MUX  /utx/U$11/U$6
+  (R) + 1306 OR   /utx/g4482__5019/U$1
+
+Compared points are: Non-equivalent
+  (G) + 62   DFF  /utx/counts_reg[4]
+  (R) + 131  DFF  /utx/counts_reg[4]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1104 MUX  /utx/U$11/U$5
+  (R) + 1298 OR   /utx/g4480__7344/U$1
+
+Compared points are: Non-equivalent
+  (G) + 63   DFF  /utx/counts_reg[3]
+  (R) + 130  DFF  /utx/counts_reg[3]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1095 MUX  /utx/U$11/U$4
+  (R) + 1290 OR   /utx/g4478__2703/U$1
+
+Compared points are: Non-equivalent
+  (G) + 64   DFF  /utx/counts_reg[2]
+  (R) + 129  DFF  /utx/counts_reg[2]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1086 MUX  /utx/U$11/U$3
+  (R) + 1302 OR   /utx/g4481__1840/U$1
+
+Compared points are: Non-equivalent
+  (G) + 65   DFF  /utx/counts_reg[1]
+  (R) + 128  DFF  /utx/counts_reg[1]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1077 MUX  /utx/U$11/U$2
+  (R) + 1294 OR   /utx/g4479__5795/U$1
+
+Compared points are: Non-equivalent
+  (G) + 66   DFF  /utx/counts_reg[0]
+  (R) + 127  DFF  /utx/counts_reg[0]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1069 MUX  /utx/U$11/U$1
+  (R) + 1426 OR   /utx/g4510__5795/U$1
+
+Compared points are: Non-equivalent
+  (G) + 99   DFF  /utx/donetx_reg
+  (R) + 169  DFF  /utx/donetx_reg/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1512 MUX  /utx/U$15
+  (R) + 1461 NAND /utx/g4513__1840/U$1
+
+Compared points are: Non-equivalent
+  (G) + 100  DFF  /utx/tx_reg
+  (R) + 168  DFF  /utx/tx_reg/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1577 MUX  /utx/U$18
+  (R) + 1458 NAND /utx/g4512__7344/U$1
+
+Compared points are: Non-equivalent
+  (G) + 102  DFF  /rtx/state_reg[0]
+  (R) + 94   DFF  /rtx/state_reg[0]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1658 MUX  /rtx/U$1/U$1
+  (R) + 915  NAND /rtx/g3222__6877/U$1
+
+Compared points are: Non-equivalent
+  (G) + 104  DFF  /rtx/counts_reg[31]
+  (R) + 83   DFF  /rtx/counts_reg[31]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1985 MUX  /rtx/U$9/U$32
+  (R) + 1010 AND  /rtx/g3264__7118/U$1
+
+Compared points are: Non-equivalent
+  (G) + 105  DFF  /rtx/counts_reg[30]
+  (R) + 82   DFF  /rtx/counts_reg[30]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1976 MUX  /rtx/U$9/U$31
+  (R) + 1172 AND  /rtx/g3379/U$1
+
+Compared points are: Non-equivalent
+  (G) + 106  DFF  /rtx/counts_reg[29]
+  (R) + 81   DFF  /rtx/counts_reg[29]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1967 MUX  /rtx/U$9/U$30
+  (R) + 1002 AND  /rtx/g3262__2391/U$1
+
+Compared points are: Non-equivalent
+  (G) + 107  DFF  /rtx/counts_reg[28]
+  (R) + 80   DFF  /rtx/counts_reg[28]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1958 MUX  /rtx/U$9/U$29
+  (R) + 997  AND  /rtx/g3260__6877/U$1
+
+Compared points are: Non-equivalent
+  (G) + 108  DFF  /rtx/counts_reg[27]
+  (R) + 79   DFF  /rtx/counts_reg[27]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1949 MUX  /rtx/U$9/U$28
+  (R) + 999  AND  /rtx/g3261__2900/U$1
+
+Compared points are: Non-equivalent
+  (G) + 109  DFF  /rtx/counts_reg[26]
+  (R) + 78   DFF  /rtx/counts_reg[26]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1940 MUX  /rtx/U$9/U$27
+  (R) + 993  AND  /rtx/g3259__1309/U$1
+
+Compared points are: Non-equivalent
+  (G) + 110  DFF  /rtx/counts_reg[25]
+  (R) + 77   DFF  /rtx/counts_reg[25]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1931 MUX  /rtx/U$9/U$26
+  (R) + 990  AND  /rtx/g3258__2683/U$1
+
+Compared points are: Non-equivalent
+  (G) + 111  DFF  /rtx/counts_reg[24]
+  (R) + 76   DFF  /rtx/counts_reg[24]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1922 MUX  /rtx/U$9/U$25
+  (R) + 987  AND  /rtx/g3257__9682/U$1
+
+Compared points are: Non-equivalent
+  (G) + 112  DFF  /rtx/counts_reg[23]
+  (R) + 75   DFF  /rtx/counts_reg[23]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1913 MUX  /rtx/U$9/U$24
+  (R) + 984  AND  /rtx/g3256__4547/U$1
+
+Compared points are: Non-equivalent
+  (G) + 113  DFF  /rtx/counts_reg[22]
+  (R) + 74   DFF  /rtx/counts_reg[22]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1904 MUX  /rtx/U$9/U$23
+  (R) + 981  AND  /rtx/g3255__1474/U$1
+
+Compared points are: Non-equivalent
+  (G) + 114  DFF  /rtx/counts_reg[21]
+  (R) + 73   DFF  /rtx/counts_reg[21]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1895 MUX  /rtx/U$9/U$22
+  (R) + 978  AND  /rtx/g3254__3772/U$1
+
+Compared points are: Non-equivalent
+  (G) + 115  DFF  /rtx/counts_reg[20]
+  (R) + 72   DFF  /rtx/counts_reg[20]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1886 MUX  /rtx/U$9/U$21
+  (R) + 975  AND  /rtx/g3253__4296/U$1
+
+Compared points are: Non-equivalent
+  (G) + 116  DFF  /rtx/counts_reg[19]
+  (R) + 71   DFF  /rtx/counts_reg[19]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1877 MUX  /rtx/U$9/U$20
+  (R) + 972  AND  /rtx/g3252__8780/U$1
+
+Compared points are: Non-equivalent
+  (G) + 117  DFF  /rtx/counts_reg[18]
+  (R) + 70   DFF  /rtx/counts_reg[18]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1868 MUX  /rtx/U$9/U$19
+  (R) + 969  AND  /rtx/g3251__9906/U$1
+
+Compared points are: Non-equivalent
+  (G) + 118  DFF  /rtx/counts_reg[17]
+  (R) + 69   DFF  /rtx/counts_reg[17]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1859 MUX  /rtx/U$9/U$18
+  (R) + 966  AND  /rtx/g3250__1857/U$1
+
+Compared points are: Non-equivalent
+  (G) + 119  DFF  /rtx/counts_reg[16]
+  (R) + 68   DFF  /rtx/counts_reg[16]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1850 MUX  /rtx/U$9/U$17
+  (R) + 963  AND  /rtx/g3249__5019/U$1
+
+Compared points are: Non-equivalent
+  (G) + 120  DFF  /rtx/counts_reg[15]
+  (R) + 67   DFF  /rtx/counts_reg[15]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1841 MUX  /rtx/U$9/U$16
+  (R) + 960  AND  /rtx/g3248__1840/U$1
+
+Compared points are: Non-equivalent
+  (G) + 121  DFF  /rtx/counts_reg[14]
+  (R) + 66   DFF  /rtx/counts_reg[14]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1832 MUX  /rtx/U$9/U$15
+  (R) + 957  AND  /rtx/g3247__7344/U$1
+
+Compared points are: Non-equivalent
+  (G) + 122  DFF  /rtx/counts_reg[13]
+  (R) + 65   DFF  /rtx/counts_reg[13]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1823 MUX  /rtx/U$9/U$14
+  (R) + 954  AND  /rtx/g3246__5795/U$1
+
+Compared points are: Non-equivalent
+  (G) + 123  DFF  /rtx/counts_reg[12]
+  (R) + 64   DFF  /rtx/counts_reg[12]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1814 MUX  /rtx/U$9/U$13
+  (R) + 949  AND  /rtx/g3244__6083/U$1
+
+Compared points are: Non-equivalent
+  (G) + 124  DFF  /rtx/counts_reg[11]
+  (R) + 63   DFF  /rtx/counts_reg[11]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1805 MUX  /rtx/U$9/U$12
+  (R) + 946  AND  /rtx/g3243__2250/U$1
+
+Compared points are: Non-equivalent
+  (G) + 125  DFF  /rtx/counts_reg[10]
+  (R) + 62   DFF  /rtx/counts_reg[10]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1796 MUX  /rtx/U$9/U$11
+  (R) + 951  AND  /rtx/g3245__2703/U$1
+
+Compared points are: Non-equivalent
+  (G) + 126  DFF  /rtx/counts_reg[9]
+  (R) + 61   DFF  /rtx/counts_reg[9]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1787 MUX  /rtx/U$9/U$10
+  (R) + 942  AND  /rtx/g3242__5266/U$1
+
+Compared points are: Non-equivalent
+  (G) + 127  DFF  /rtx/counts_reg[8]
+  (R) + 60   DFF  /rtx/counts_reg[8]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1778 MUX  /rtx/U$9/U$9
+  (R) + 939  AND  /rtx/g3241__7114/U$1
+
+Compared points are: Non-equivalent
+  (G) + 128  DFF  /rtx/counts_reg[7]
+  (R) + 59   DFF  /rtx/counts_reg[7]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1769 MUX  /rtx/U$9/U$8
+  (R) + 936  AND  /rtx/g3240__5703/U$1
+
+Compared points are: Non-equivalent
+  (G) + 129  DFF  /rtx/counts_reg[6]
+  (R) + 58   DFF  /rtx/counts_reg[6]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1760 MUX  /rtx/U$9/U$7
+  (R) + 933  AND  /rtx/g3239__5953/U$1
+
+Compared points are: Non-equivalent
+  (G) + 130  DFF  /rtx/counts_reg[5]
+  (R) + 57   DFF  /rtx/counts_reg[5]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1751 MUX  /rtx/U$9/U$6
+  (R) + 930  AND  /rtx/g3238__1786/U$1
+
+Compared points are: Non-equivalent
+  (G) + 131  DFF  /rtx/counts_reg[4]
+  (R) + 56   DFF  /rtx/counts_reg[4]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1742 MUX  /rtx/U$9/U$5
+  (R) + 925  AND  /rtx/g3236__7118/U$1
+
+Compared points are: Non-equivalent
+  (G) + 132  DFF  /rtx/counts_reg[3]
+  (R) + 55   DFF  /rtx/counts_reg[3]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1733 MUX  /rtx/U$9/U$4
+  (R) + 921  AND  /rtx/g3234__2391/U$1
+
+Compared points are: Non-equivalent
+  (G) + 133  DFF  /rtx/counts_reg[2]
+  (R) + 54   DFF  /rtx/counts_reg[2]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1724 MUX  /rtx/U$9/U$3
+  (R) + 918  AND  /rtx/g3233__2900/U$1
+
+Compared points are: Non-equivalent
+  (G) + 134  DFF  /rtx/counts_reg[1]
+  (R) + 53   DFF  /rtx/counts_reg[1]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1715 MUX  /rtx/U$9/U$2
+  (R) + 927  AND  /rtx/g3237__8757/U$1
+
+Compared points are: Non-equivalent
+  (G) + 135  DFF  /rtx/counts_reg[0]
+  (R) + 52   DFF  /rtx/counts_reg[0]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1707 MUX  /rtx/U$9/U$1
+  (R) + 922  NOR  /rtx/g3235__7675/U$1
+
+Compared points are: Non-equivalent
+  (G) + 168  DFF  /rtx/rxdata_reg[7]
+  (R) + 92   DFF  /rtx/rxdata_reg[7]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2185 MUX  /rtx/U$13/U$8
+  (R) + 889  OR   /rtx/g3212__8780/U$1
+
+Compared points are: Non-equivalent
+  (G) + 169  DFF  /rtx/rxdata_reg[6]
+  (R) + 91   DFF  /rtx/rxdata_reg[6]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2180 MUX  /rtx/U$13/U$7
+  (R) + 892  OR   /rtx/g3213__4296/U$1
+
+Compared points are: Non-equivalent
+  (G) + 170  DFF  /rtx/rxdata_reg[5]
+  (R) + 90   DFF  /rtx/rxdata_reg[5]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2175 MUX  /rtx/U$13/U$6
+  (R) + 895  OR   /rtx/g3214__3772/U$1
+
+Compared points are: Non-equivalent
+  (G) + 171  DFF  /rtx/rxdata_reg[4]
+  (R) + 89   DFF  /rtx/rxdata_reg[4]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2170 MUX  /rtx/U$13/U$5
+  (R) + 898  OR   /rtx/g3215__1474/U$1
+
+Compared points are: Non-equivalent
+  (G) + 172  DFF  /rtx/rxdata_reg[3]
+  (R) + 88   DFF  /rtx/rxdata_reg[3]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2165 MUX  /rtx/U$13/U$4
+  (R) + 901  OR   /rtx/g3216__4547/U$1
+
+Compared points are: Non-equivalent
+  (G) + 173  DFF  /rtx/rxdata_reg[2]
+  (R) + 87   DFF  /rtx/rxdata_reg[2]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2160 MUX  /rtx/U$13/U$3
+  (R) + 904  OR   /rtx/g3217__9682/U$1
+
+Compared points are: Non-equivalent
+  (G) + 174  DFF  /rtx/rxdata_reg[1]
+  (R) + 86   DFF  /rtx/rxdata_reg[1]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2155 MUX  /rtx/U$13/U$2
+  (R) + 907  OR   /rtx/g3219__2683/U$1
+
+Compared points are: Non-equivalent
+  (G) + 175  DFF  /rtx/rxdata_reg[0]
+  (R) + 85   DFF  /rtx/rxdata_reg[0]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2150 MUX  /rtx/U$13/U$1
+  (R) + 910  OR   /rtx/g3221__1309/U$1
+
+Compared points are: Non-equivalent
+  (G) + 176  DFF  /rtx/done_reg
+  (R) + 84   DFF  /rtx/done_reg/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 2191 AND  /rtx/U$17
+  (R) + 1170 OR   /rtx/g2__5953/U$1
+
+96 Non-equivalent point(s) reported
+96 compared point(s) reported
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           0      66        66      
+--------------------------------------------------------------------------------
+Non-equivalent       11     85        96      
+================================================================================
+// Command: report compare data -abort
+0 Abort point(s) reported
+0 compared point(s) reported
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           0      66        66      
+--------------------------------------------------------------------------------
+Non-equivalent       11     85        96      
+================================================================================
+// Command: report compare data -verbose > runLECDir/comparison.rpt
+// Command: set command echo off
+
+===============================================================================
+=            Netlist Comparison Summary    
+===============================================================================
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           0      66        66      
+--------------------------------------------------------------------------------
+Non-equivalent       11     85        96      
+================================================================================
+
+
+ Info: Generated netlist comparison report:
+       runLECDir/comparison.rpt
+
+// Command: usage
+CPU time     : 0.49    seconds
+Memory usage : 290.58  M bytes
+// Command: exit -Force -Success
